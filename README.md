@@ -1,0 +1,2 @@
+# spin-docs
+Spin documentation
