@@ -216,7 +216,9 @@ You must still grant permission by including the relevant `spin.internal` hosts 
 allowed_outbound_hosts = ["http://authz.spin.internal", "https://reporting.spin.internal"]
 ```
 
-To allow local chaining to _any_ component in your application, use a subdomain wildcard:
+You may use either the `http` or `https` scheme, and the scheme in the service chaining request is ignored: only the special host name matters.
+
+To allow local chaining to _any_ component in your application, you can use a subdomain wildcard:
 
 ```toml
 allowed_outbound_hosts = ["http://*.spin.internal"]
