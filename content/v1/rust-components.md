@@ -2,7 +2,7 @@ title = "Building Spin components in Rust"
 template = "main"
 date = "2022-03-14T00:22:56Z"
 [extra]
-canonical_url = "https://spinframework.com/v2/rust-components"
+canonical_url = "https://spinframework.dev/v2/rust-components"
 url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v1/rust-components.md"
 
 ---

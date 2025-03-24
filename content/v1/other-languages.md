@@ -2,7 +2,7 @@ title = "Building Spin components in other languages"
 template = "main"
 date = "2022-03-14T00:22:56Z"
 [extra]
-canonical_url = "https://spinframework.com/v2/other-languages"
+canonical_url = "https://spinframework.dev/v2/other-languages"
 url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v1/other-languages.md"
 
 ---

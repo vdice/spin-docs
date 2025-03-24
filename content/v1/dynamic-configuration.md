@@ -2,7 +2,7 @@ title = "Dynamic and Runtime Application Configuration"
 template = "main"
 date = "2022-03-14T00:22:56Z"
 [extra]
-canonical_url = "https://spinframework.com/v2/dynamic-configuration"
+canonical_url = "https://spinframework.dev/v2/dynamic-configuration"
 url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v1/dynamic-configuration.md"
 
 ---

@@ -2,7 +2,7 @@ title = "Building a URL Shortener With Spin"
 template = "main"
 date = "2022-03-14T00:22:56Z"
 [extra]
-canonical_url = "https://spinframework.com/v2/url-shortener-tutorial"
+canonical_url = "https://spinframework.dev/v2/url-shortener-tutorial"
 url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v1/url-shortener-tutorial.md"
 
 ---
