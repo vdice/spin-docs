@@ -3,7 +3,7 @@ template = "main"
 date = "2022-03-14T00:22:56Z"
 enable_shortcodes = true
 [extra]
-canonical_url = "https://spinframework.com/v2/redis-outbound"
+canonical_url = "https://spinframework.dev/v2/redis-outbound"
 url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v1/redis-outbound.md"
 
 ---

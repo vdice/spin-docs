@@ -3,7 +3,7 @@ template = "main"
 date = "2023-02-13T00:00:00Z"
 enable_shortcodes = true
 [extra]
-canonical_url = "https://spinframework.com/v2/registry-tutorial"
+canonical_url = "https://spinframework.dev/v2/registry-tutorial"
 url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v1/registry-tutorial.md"
 
 ---

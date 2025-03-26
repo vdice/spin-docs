@@ -1,11 +1,11 @@
 {
   "name": "spin-docs",
   "version": "0.1.0",
-  "homepage": "https://spinframework.com",
+  "homepage": "https://spinframework.dev",
   "author": {
     "name": "Spin Maintainers",
     "email": "spin@cncf.io",
-    "url": "https://spinframework.com"
+    "url": "https://spinframework.dev"
   },
   "description": "Spin project website",
   "repository": {

@@ -3,7 +3,7 @@ template = "main"
 date = "2023-02-21T00:00:00Z"
 enable_shortcodes = true
 [extra]
-canonical_url = "https://spinframework.com/v2/key-value-store-tutorial"
+canonical_url = "https://spinframework.dev/v2/key-value-store-tutorial"
 url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v1/key-value-store-tutorial.md"
 
 ---

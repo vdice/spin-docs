@@ -2,7 +2,7 @@ title = "Contributing to Docs"
 template = "main"
 date = "2022-01-01T00:00:01Z"
 [extra]
-canonical_url = "https://spinframework.com/v2/contributing-docs"
+canonical_url = "https://spinframework.dev/v2/contributing-docs"
 url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v1/contributing-docs.md"
 keywords = "contribute contributing"
 

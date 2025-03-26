@@ -2,7 +2,7 @@ title = "API Support Overview"
 template = "main"
 date = "2023-03-03T03:03:03Z"
 [extra]
-canonical_url = "https://spinframework.com/v2/api-guides-overview"
+canonical_url = "https://spinframework.dev/v2/api-guides-overview"
 url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v1/api-guides-overview.md"
 
 ---

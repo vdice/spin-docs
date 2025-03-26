@@ -3,7 +3,7 @@ template = "main"
 date = "2023-02-13T00:00:00Z"
 enable_shortcodes = true
 [extra]
-canonical_url = "https://spinframework.com/v2/troubleshooting-application-dev"
+canonical_url = "https://spinframework.dev/v2/troubleshooting-application-dev"
 url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v1/troubleshooting-application-dev.md"
 
 ---

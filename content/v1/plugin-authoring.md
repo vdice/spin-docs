@@ -2,7 +2,7 @@ title = "Creating Spin Plugins"
 template = "main"
 date = "2023-02-1T00:22:56Z"
 [extra]
-canonical_url = "https://spinframework.com/v2/plugin-authoring"
+canonical_url = "https://spinframework.dev/v2/plugin-authoring"
 url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v1/plugin-authoring.md"
 
 ---

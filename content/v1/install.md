@@ -3,7 +3,7 @@ template = "main"
 date = "2022-03-14T00:22:56Z"
 enable_shortcodes = true
 [extra]
-canonical_url = "https://spinframework.com/v2/install"
+canonical_url = "https://spinframework.dev/v2/install"
 url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v1/install.md"
 keywords = "install"
 
@@ -54,7 +54,7 @@ Another option (other than brew) is to use our installer script. The installer s
 <!-- @selectiveCpy -->
 
 ```bash
-$ curl -fsSL https://spinframework.com/downloads/install.sh | bash
+$ curl -fsSL https://spinframework.dev/downloads/install.sh | bash
 ```
 
 Once you have run the installer script, it is highly recommended to add Spin to a folder, which is on your path, e.g.:
@@ -72,7 +72,7 @@ To install a specific version, you can pass arguments to the install script this
 <!-- @selectiveCpy -->
 
 ```bash
-$ curl -fsSL https://spinframework.com/downloads/install.sh | bash -s -- -v v1.5.0
+$ curl -fsSL https://spinframework.dev/downloads/install.sh | bash -s -- -v v1.5.0
 ```
 
 To install the canary version of spin, you should pass the argument `-v canary`. The canary version is always the latest commit to the main branch of Spin:
@@ -80,7 +80,7 @@ To install the canary version of spin, you should pass the argument `-v canary`.
 <!-- @selectiveCpy -->
 
 ```bash
-$ curl -fsSL https://spinframework.com/downloads/install.sh | bash -s -- -v canary
+$ curl -fsSL https://spinframework.dev/downloads/install.sh | bash -s -- -v canary
 ```
 
 {{ blockEnd }}
@@ -118,7 +118,7 @@ The installer script also installs Spin along with a starter set of language tem
 <!-- @selectiveCpy -->
 
 ```bash
-$ curl -fsSL https://spinframework.com/downloads/install.sh | bash
+$ curl -fsSL https://spinframework.dev/downloads/install.sh | bash
 ```
 
 Once you have run the installer script, it is highly recommended to add Spin to a folder, which is on your path, e.g.:
@@ -136,7 +136,7 @@ To install a specific version, you can pass arguments to the install script this
 <!-- @selectiveCpy -->
 
 ```bash
-$ curl -fsSL https://spinframework.com/downloads/install.sh | bash -s -- -v v0.10.0
+$ curl -fsSL https://spinframework.dev/downloads/install.sh | bash -s -- -v v0.10.0
 ```
 
 To install the canary version of spin, you should pass the argument `-v canary`. The canary version is always the latest commit to the main branch of Spin:

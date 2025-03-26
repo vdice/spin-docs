@@ -3,7 +3,7 @@ template = "main"
 date = "2023-03-01T00:01:01Z"
 enable_shortcodes = true
 [extra]
-canonical_url = "https://spinframework.com/v2/kubernetes"
+canonical_url = "https://spinframework.dev/v2/kubernetes"
 url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v1/kubernetes.md"
 
 ---
