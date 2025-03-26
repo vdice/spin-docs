@@ -31,8 +31,8 @@ The [Spin Project Meeting Agenda is a public document](https://docs.google.com/d
 
 ## Code of Conduct
 
-First, any contribution and interaction on any Fermyon project MUST follow our
-[code of conduct](https://www.fermyon.com/code-of-conduct). Thank you for being
+First, any contribution and interaction on any spinframework project MUST follow our
+[code of conduct](https://github.com/spinframework/governance). Thank you for being
 part of an inclusive and open community!
 
 If you plan on contributing anything complex, please go through the issue and PR
