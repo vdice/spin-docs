@@ -4,7 +4,7 @@ date = "2023-07-20T12:00:00Z"
 enable_shortcodes = true
 [extra]
 type = "contributing"
-url = "https://github.com/fermyon/developer/blob/main/content/api/hub/contributing.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/api/hub/contributing.md"
 
 ---
 
@@ -25,25 +25,21 @@ url = "https://github.com/fermyon/developer/blob/main/content/api/hub/contributi
 We are delighted that you are interested in making Spin Hub better! Thank you! This
 document will guide you through making your first contribution to the project.
 
-First, any contribution and interaction on any Fermyon project MUST follow our
-[code of conduct](https://www.fermyon.com/code-of-conduct). Thank you for being
+First, any contribution and interaction on any spinframework project MUST follow our
+[code of conduct](https://github.com/spinframework/governance). Thank you for being
 part of an inclusive and open community!
 
 ## Contribution Procedure
 
 ### Fork the Repository
 
-The first step is to fork the [developer repository](https://github.com/fermyon/developer), from Fermyon's GitHub, to your own GitHub account.
+The first step is to fork the [spin-docs repository](https://github.com/spinframework/spin-docs), from spinframework's GitHub, to your own GitHub account.
 
-![Fork the repository](/static/image/fork_developer_repo.png)
-
-Ensure that you are forking the developer repository **to your own** GitHub account; where you have full editing privileges.
+Ensure that you are forking the spin-docs repository **to your own** GitHub account; where you have full editing privileges.
 
 ### Clone the Fork
 
 Copy the URL from the UI in readiness for running the `git clone` command.
-
-![Fork the repository](/static/image/clone_developer_repo.png)
 
 Go ahead and clone the new fork that you just created (the one which resides in your own GitHub account):
 
@@ -51,8 +47,8 @@ Go ahead and clone the new fork that you just created (the one which resides in 
 
 ```bash
 $ cd ~
-$ git clone git@github.com:yourusername/developer.git
-$ cd developer
+$ git clone git@github.com:yourusername/spin-docs.git
+$ cd spin-docs
 ```
 
 ### Create New Branch
@@ -72,7 +68,7 @@ Create a new remote for the upstream (a pointer to the original repository to wh
 <!-- @nocpy -->
 
 ```bash
-$ git remote add upstream https://github.com/fermyon/developer
+$ git remote add upstream https://github.com/spinframework/spin-docs
 ```
 
 ### Creating Markdown
@@ -108,9 +104,9 @@ url = "https://github.com/spinframework/spin/tree/main/templates/http-rust"
 Be sure to make a description of the hub item in the body (below the **`---`** line). The content that you write below the **`---`** line will be the content shown when the card is expanded in a modal view. For example:
 
 ```md
-This is the default HTTP trigger template for Rust. It installs by default with the [Spin install script](../../spin/install#installing-spin).
+This is the default HTTP trigger template for Rust. It installs by default with the [Spin install script](../../install#installing-spin).
 
-This guide walks you through how to use it: [HTTP Components](../../spin/rust-components#http-components)
+This guide walks you through how to use it: [HTTP Components](../../rust-components#http-components)
 ```
 
 ### Valid Metadata
@@ -140,7 +136,7 @@ The following is a list of the types of content that a user can submit to the Sp
     - Spin Application examples
     - Code snippets
 - **(Spin) Templates**
-    - Complete components such as the [Spin static-fileserver](https://github.com/fermyon/spin-fileserver)
+    - Complete components such as the [Spin static-fileserver](https://github.com/spinframework/spin-fileserver)
 - **(Spin) Plugins**
     - Triggers and tools
     - See Lee-Orr’s Message trigger: [https://github.com/lee-orr/spin-message-trigger](https://github.com/lee-orr/spin-message-trigger)
@@ -165,9 +161,9 @@ $ npm run spin
 
 ### Add Changes
 
-Once your changes have been checked, go ahead and add your changes by moving to a top-level directory, under which your changes exist i.e. `cd ~/developer`.
+Once your changes have been checked, go ahead and add your changes by moving to a top-level directory, under which your changes exist i.e. `cd ~/spin-docs`.
 
-Add your changes by running the following command, from the root of the developer repository:
+Add your changes by running the following command, from the root of the spin-docs repository:
 
 <!-- @nocpy -->
 
@@ -219,10 +215,10 @@ The above command will return output similar to the following:
 <!-- @nocpy -->
 
 ```bash
-origin	git@github.com:yourusername/developer.git (fetch)
-origin	git@github.com:yourusername/developer.git (push)
-upstream	https://github.com/fermyon/developer (fetch)
-upstream	https://github.com/fermyon/developer (push)
+origin	git@github.com:yourusername/spin-docs.git (fetch)
+origin	git@github.com:yourusername/spin-docs.git (push)
+upstream	https://github.com/spinframework/spin-docs (fetch)
+upstream	https://github.com/spinframework/spin-docs (push)
 ```
 
 Once you are satisfied go ahead and push your changes:

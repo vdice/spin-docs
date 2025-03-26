@@ -171,7 +171,7 @@ HTTP path: /api/...
 
 ### Supported AI Models
 
-Fermyon's Spin and Serverless AI currently support:
+Spin and Serverless AI currently support:
 - Meta's open source Large Language Models (LLMs) [Llama](https://ai.meta.com/llama/), specifically the `llama2-chat` and `codellama-instruct` models (see Meta [Licenses](#licenses) section above).
 - SentenceTransformers' [embeddings](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) models, specifically the `all-minilm-l6-v2` model.
 
@@ -1048,7 +1048,7 @@ key_value_stores = ["default"]
 
 ### Building and Deploying Your Spin Application
 
-**Note:** Running inferencing on localhost (your CPU) is not as optimal as deploying to Fermyon's Serverless AI (where inferencing is performed by high-powered GPUs). You can skip this `spin build --up` step and move straight to `spin cloud deploy` if you:
+**Note:** Running inferencing on localhost (your CPU) is not as optimal as deploying to Fermyon Cloud's Serverless AI (where inferencing is performed by high-powered GPUs). You can skip this `spin build --up` step and move straight to `spin cloud deploy` if you:
 
 - a) are using one of the 3 supported models above,
 - b) have configured your `spin.toml` file to explicitly configure the model (as shown above)
@@ -1109,7 +1109,7 @@ The groundbreaking Fermyon Serverless AI introduces a revolutionary addition to 
 
 ## Conclusion
 
-We want to get feedback on the Serverless AI API. We are curious about what models you would like to use and what applications you are building using Serverless AI. Let us know what you need, and how Fermyon's Serverless AI could potentially help solve a problem for you. We would love to help you write your new Serverless AI application.
+We want to get feedback on the Serverless AI API. We are curious about what models you would like to use and what applications you are building using Serverless AI. Let us know what you need, and how Serverless AI could potentially help solve a problem for you. We would love to help you write your new Serverless AI application.
 
 ## Next Steps
 

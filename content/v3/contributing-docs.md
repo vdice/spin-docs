@@ -34,9 +34,9 @@ keywords = "contribute contributing"
   - [10. Push Changes](#10-push-changes)
   - [11. Create a Pull Request](#11-create-a-pull-request)
 
-We are delighted that you are interested in making our developer documentation better. Thank you! We welcome and appreciate contributions of all types — opening issues, fixing typos, adding examples, one-liner code fixes, tests, or complete features.
+We are delighted that you are interested in making our documentation better. Thank you! We welcome and appreciate contributions of all types — opening issues, fixing typos, adding examples, one-liner code fixes, tests, or complete features.
 
-Any contribution and interaction on any Fermyon project MUST follow our [code of conduct](https://www.fermyon.com/code-of-conduct). Thank you for being part of an inclusive and open community!
+Any contribution and interaction on any spinframework project MUST follow our [code of conduct](https://github.com/spinframework/governance). Thank you for being part of an inclusive and open community!
 
 Below are a few pointers designed to help you contribute.
 
@@ -46,11 +46,11 @@ The following points will help guide your contribution from a resource-type pers
 
 ### 1. Tutorials
 
-Tutorials are oriented toward learning. Tutorials are designed to get a user started on something new (that they have not tried before). You can think of a tutorial as a lesson i.e. teaching a Spin user [how to use Redis to persist data](/cloud/data-redis). The tutorial may contain many logically ordered steps i.e. installing Spin, installing Redis, using Spin templates, configuring a Spin application and so forth. The desired outcome for a tutorial is for the user to have a working deployment or application. Think of it as a lesson in how to bake a cake.
+Tutorials are oriented toward learning. Tutorials are designed to get a user started on something new (that they have not tried before). You can think of a tutorial as a lesson i.e. teaching a Spin user [how to use the Key Value store to persist data](/key-value-store-tutorial.md). The tutorial may contain many logically ordered steps i.e. installing Spin, using Spin templates, configuring a Spin application and so forth. The desired outcome for a tutorial is for the user to have a working deployment or application. Think of it as a lesson in how to bake a cake.
 
 ### 2. How-To Guides
 
-How-to guides are oriented towards showing a user how to solve a problem, which leads them to be able to achieve their own goal. The how-to guide will follow a series of logical steps. Think of it as providing a recipe for the user's creativity. For example, you can show a user how to [develop a Spin application](/cloud/develop) without telling them what the application must do; that is up to the user's imagination.
+How-to guides are oriented towards showing a user how to solve a problem, which leads them to be able to achieve their own goal. The how-to guide will follow a series of logical steps. Think of it as providing a recipe for the user's creativity. For example, you can show a user how to [develop a Spin application](/writing-apps.md) without telling them what the application must do; that is up to the user's imagination.
 
 ### 3. Reference
 
@@ -58,71 +58,19 @@ Reference resources are merely a dry description; describing the feature in its 
 
 ### 4. Explanation
 
-An explanation resource is written using a deep-dive approach i.e. providing a deep explanation with the view to impart a deep understanding of a particular concept, feature or product. You may find your contribution is so in-depth that it becomes a long form article like a blog post. If that is the case, please get in touch and we can discuss options around getting your content published on another platform; like the [Fermyon Blog](https://www.fermyon.com/blog/index).
+An explanation resource is written using a deep-dive approach i.e. providing a deep explanation with the view to impart a deep understanding of a particular concept, feature or product. You may find your contribution is so in-depth that it becomes a long form article like a blog post. If that is the case, please get in touch and we can discuss options around getting your content published on another platform; like the [Spin Blog](https://spinframework.dev/blog).
 
-**Tying It All Together**
-
-You will notice that the menu system is organized in terms of "Tutorial", "How-To", "Reference" and so forth. When you write your contribution please decide which product (Cloud, Spin, Bartholomew) category it falls into and also which resource type it aligns with. Armed with that information you can go ahead and create your new file. For example, your "how-to" resource on "developing a Spin application" in Fermyon cloud would be saved to the `content/cloud/` folder; specifically, `content/cloud/develop.md` and the menu item (for the left-hand-side menu) would be added to the `templates/cloud_sidebar.hbs` file, as shown below.
-
-![cloud develop example](/static/image/docs/cloud-develop-example.png)
-
-The resulting output would be as follows.
-
-![cloud develop example](/static/image/docs/cloud-develop-example-2.png)
-
-## Documents Relevant to Two or More Projects
-
-If a document is relevant to two or more projects, the dynamic body feature of bartholomew is to be used. Create the document in one of the projects with the content. In the other project(s) create a file with only the frontmatter. Then add the following field to the frontmatter:
-
-<!-- @nocpy -->
-
-```toml
-.
-.
-body_source = "<path to the content>"
-
-[extra]
-
-```
-
-The value for the `body_source` key, should be the path from which the content is being shared (relative to the repository's `content` folder). For example if the Spin project's `developer/content/spin/v3/contributing-docs.md` holds the sharable content (as the single source of truth), then the Cloud project can display that same content by using the following frontmatter:
-
-<!-- @nocpy -->
-
-```toml
-title = "Contributing to Docs"
-template = "cloud_main"
-date = "2023-11-04T00:00:01Z"
-body_source = "/spin/v3/contributing-docs"
-
-[extra]
-url = "https://github.com/spinframework/spin-docs/blob/main/content/cloud/contributing-docs.md"
-keywords = "contribute contributing"
-
----
-```
-
-> Note: the `body_source = "/spin/contributing-docs"` part of the frontmatter does not need to include the `.md` file extension (as is also the case when hyperlinking via markdown anywhere in a developer documentation file's body).
-
-## Technical Documentation Procedure (Video)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Edku4hQj9Mo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-## Technical Documentation Procedure (Text)
+## Technical Documentation Procedure
 
 ### 1. Fork the Repository
 
-The first step is to fork the [developer repository](https://github.com/fermyon/developer), from Fermyon's GitHub, to your own GitHub account.
+The first step is to fork the [spin-docs repository](https://github.com/spinframework/spin-docs), from spinframework's GitHub, to your own GitHub account.
 
-![Fork the repository](/static/image/fork_developer_repo.png)
-
-Ensure that you are forking the developer repository **to your own** GitHub account; where you have full editing privileges.
+Ensure that you are forking the spin-docs repository **to your own** GitHub account; where you have full editing privileges.
 
 ### 2. Clone the Fork
 
 Copy the URL from the UI in readiness for running the `git clone` command.
-
-![Fork the repository](/static/image/clone_developer_repo.png)
 
 Go ahead and clone the new fork that you just created (the one which resides in your own GitHub account):
 
@@ -130,7 +78,7 @@ Go ahead and clone the new fork that you just created (the one which resides in 
 
 ```bash
 $ cd ~
-$ git clone git@github.com:yourusername/developer.git
+$ git clone git@github.com:yourusername/spin-docs.git
 $ cd developer
 ```
 
@@ -151,7 +99,7 @@ Create a new remote for the upstream (a pointer to the original repository to wh
 <!-- @selectiveCpy -->
 
 ```bash
-$ git remote add upstream https://github.com/fermyon/developer
+$ git remote add upstream https://github.com/spinframework/spin-docs
 ```
 
 ### 5. Code Blocks, Annotations and Table of Contents (ToC)
@@ -201,7 +149,7 @@ If you want the code in a code block to be copyable with no "smarts" to remove t
 
 **Multi-tab code blocks**
 
-Multi-tab code blocks [have recently been implemented](https://github.com/fermyon/developer/pull/239). Examples can be seen in the [Spin installer documentation](./install#installing-spin) and [Spin Key/Value documentation](./key-value-store-tutorial#the-spin-toml-file). The above examples demonstrate how tabs can either represent platforms i.e. `Windows`, `Linux` and `macOS` or represent specific programming languages i.e. `Rust`, `JavaScript` and `Golang` etc. Here is a brief example of how to implement multi-tab code blocks when writing technical documentation for this site, using markdown.
+Examples of multi-tab blocks can be seen in the [Spin installer documentation](./install#installing-spin) and [Spin Key/Value documentation](./key-value-store-tutorial#the-spin-toml-file). The above examples demonstrate how tabs can either represent platforms i.e. `Windows`, `Linux` and `macOS` or represent specific programming languages i.e. `Rust`, `JavaScript` and `Golang` etc. Here is a brief example of how to implement multi-tab code blocks when writing technical documentation for this site, using markdown.
 
 The first step to implementing multi-tab code blocks is placing the `enable_shortcodes = true` configuration at the start of the `.md` file. Specifically, in the `.md` file's frontmatter.
 
@@ -217,7 +165,7 @@ To list files on windows use `dir`
 <!-- @selectiveCpy -->
 
 \`\`\`bash
-$ dir hello_fermyon
+$ dir hello_spin
 \`\`\`
 and script in windows have the extension `.bat`
 
@@ -296,7 +244,7 @@ If you create content with many headings it is highly recommended to place a ToC
 
 Once you are satisfied with your contribution, you can programmatically check your content.
 
-If you have not done so already, please go ahead and perform the `npm ci` (npm clean install) command; to enable Node dependencies such as `markdownlint-cli2`. Simply run the following command, from the root of the developer repository:
+If you have not done so already, please go ahead and perform the `npm ci` (npm clean install) command; to enable Node dependencies such as `markdownlint-cli2`. Simply run the following command, from the root of the spin-docs repository:
 
 <!-- @selectiveCpy -->
 
@@ -314,7 +262,7 @@ On macOS you can install the `timeout` binary using the Homebrew package manager
 $ brew install coreutils
 ```
 
-Having all dependencies installed, you can now check for broken links (which takes several minutes) and also lint your markdown files. Simply run the following command, from the root of the developer repository:
+Having all dependencies installed, you can now check for broken links (which takes several minutes) and also lint your markdown files. Simply run the following command, from the root of the spin-docs repository:
 
 <!-- @selectiveCpy -->
 
@@ -333,11 +281,11 @@ npx markdownlint-cli2 content/spin/*.md \"#node_modules\"
 npx markdownlint-cli2 content/spin/install.md \"#node_modules\"
 ```
 
-**Note:** Whilst the `npm run test` command (which lints and also programmatically checks all URLs) does take extra time to complete it **must** be utilized before you [push changes](#10-push-changes); preventing the potential pushing of broken URLs to the developer documentation site.
+**Note:** Whilst the `npm run test` command (which lints and also programmatically checks all URLs) does take extra time to complete it **must** be utilized before you [push changes](#10-push-changes); preventing the potential pushing of broken URLs to the documentation site.
 
 ### 6.2 Indexing Your Content
 
-The developer documentation site implements in-house search. A new index is automatically generated for you when your contribution is merged into the developer documentation repository. This is done via a GitHub action. The following section explains how to alter content to increase search visibility for your content.
+The Spin documentation site implements in-house search. A new index is automatically generated for you when your contribution is merged into the documentation repository. This is done via a GitHub action. The following section explains how to alter content to increase search visibility for your content.
 
 ### 6.3 Increasing Search Visibility For Your Content
 
@@ -370,13 +318,13 @@ When using the above `@searchTerm` feature, please note the following:
 - the words must be separated by a space i.e. <!-- @searchTerm "port listen request" -->
 - these keywords will be boosted in the search results by at least one order of magnitude; so please use them with caution, so as not to displace other valid pages containing similar content.
 
-Example: If you search for the word "homing", the results will point you to the previous heading in this specific section of the developer documentation.
+Example: If you search for the word "homing", the results will point you to the previous heading in this specific section of the documentation.
 
 ![homing example](/static/image/homing.png)
 
 ### 6.4 The Edit On GitHub Button
 
-Each markdown file in the developer documentation requires a link to its GitHub page for the site to correctly render the "Edit on GitHub" button for that page.
+Each markdown file in the documentation requires a link to its GitHub page for the site to correctly render the "Edit on GitHub" button for that page.
 
 ![edit on github](/static/image/edit-on-github.png)
 
@@ -403,7 +351,7 @@ The above command is designed to be run in the background; enabling you to view 
 
 ### 6.6 Checking Your Content - Using Bartholomew's CLI
 
-The Bartholomew Command Line Interface (CLI) Tool is called `bart`. The `bart` CLI is a tool that simplifies working with Bartholomew projects (by now you probably already know that [Bartholomew](https://www.fermyon.com/blog/introducing-bartholomew) is our in-house WebAssembly (Wasm) content management system (CMS) that powers [our official Website](https://www.fermyon.com/)). And this (our official documentation) site. The `bart` CLI is handy to ensure quality assurance of new and existing content. Installing the CLI is a cinch, so please go ahead and use it when contributing.
+The Bartholomew Command Line Interface (CLI) Tool is called `bart`. The `bart` CLI is a tool that simplifies working with Bartholomew projects, like this documentation site. The `bart` CLI is handy to ensure quality assurance of new and existing content. Installing the CLI is a cinch, so please go ahead and use it when contributing.
 
 To build the Bartholomew CLI from source perform the following commands:
 
@@ -451,7 +399,7 @@ Let's take a quick look at how you can use the `bart` CLI to check any content t
 
 ### 6.7 Checking Your Content - Preview a Documentation Page on Localhost
 
-You can host your changes to the developer documentation on your own machine (localhost) by using the following `spin` commands: 
+You can host your changes to the documentation on your own machine (localhost) by using the following `spin` commands: 
 
 <!-- @selectiveCpy -->
 
@@ -464,11 +412,11 @@ $ spin build
 $ spin up -e "PREVIEW_MODE=1"
 ```
 
-> Please note: using the `PREVIEW_MODE=1` as part of a `spin` command is safe on localhost and allows you to view the content (even if the `date` setting in the content's `.md` is set to a future date). It is often the case that you will be checking content before the publishing date via your system. The developer documentation's manifest file `spin.toml` has the `PREVIEW_MODE` set to `0` i.e. `environment = { PREVIEW_MODE = "0" }`. This `spin.toml` file is correct for a production environment and should always be `0` (so that the CMS adheres to the publishing `date` setting for content on the public site). Simply put, you can use `PREVIEW_MODE=1` safely in your command line on your localhost but you should never update the `spin.toml` file (in this regard).
+> Please note: using the `PREVIEW_MODE=1` as part of a `spin` command is safe on localhost and allows you to view the content (even if the `date` setting in the content's `.md` is set to a future date). It is often the case that you will be checking content before the publishing date via your system. The documentation's manifest file `spin.toml` has the `PREVIEW_MODE` set to `0` i.e. `environment = { PREVIEW_MODE = "0" }`. This `spin.toml` file is correct for a production environment and should always be `0` (so that the CMS adheres to the publishing `date` setting for content on the public site). Simply put, you can use `PREVIEW_MODE=1` safely in your command line on your localhost but you should never update the `spin.toml` file (in this regard).
 
 ### 6.8 Scheduling Menu Items for Timed Release
 
-As mentioned above, all pages (`.md` files) in the documentation have a UTC date i.e. `date = "2023-07-25T17:26:00Z"`. The `date` is a page scheduling mechanism whereby each page is only displayed if the `date` has elapsed. Menu items (found in the `/developer/templates/*.hbs` files) that relate to a scheduled page can also be scheduled (so the specific menu item and its associated page appear at the same time). Simply envelope the menu item with the following `if` syntax to synchronize the appearance of the menu item with the related page:
+As mentioned above, all pages (`.md` files) in the documentation have a UTC date i.e. `date = "2023-07-25T17:26:00Z"`. The `date` is a page scheduling mechanism whereby each page is only displayed if the `date` has elapsed. Menu items (found in the `/templates/*.hbs` files) that relate to a scheduled page can also be scheduled (so the specific menu item and its associated page appear at the same time). Simply envelope the menu item with the following `if` syntax to synchronize the appearance of the menu item with the related page:
 
 <!-- @nocpy -->
 
@@ -482,7 +430,7 @@ As mentioned above, all pages (`.md` files) in the documentation have a UTC date
 
 ### 7. Checking Web Pages
 
-The `bart check` command can be used to check the content. Simply pass in the content as a parameter. The developer documentation [uses shortcodes](/bartholomew/shortcodes), so always pass `--shortcodes ./shortcodes` as shown below:
+The `bart check` command can be used to check the content. Simply pass in the content as a parameter. The documentation [uses shortcodes](https://developer.fermyon.com/bartholomew/shortcodes), so always pass `--shortcodes ./shortcodes` as shown below:
 
 <!-- @selectiveCpy -->
 
@@ -500,9 +448,9 @@ shortcodes: registering blockEnd
 
 ### 8. Add Changes
 
-Once your changes have been checked, go ahead and add your changes by moving to a top-level directory, under which your changes exist i.e. `cd ~/developer`.
+Once your changes have been checked, go ahead and add your changes by moving to a top-level directory, under which your changes exist i.e. `cd ~/spin-docs`.
 
-Add your changes by running the following command, from the root of the developer repository:
+Add your changes by running the following command, from the root of the spin-docs repository:
 
 <!-- @selectiveCpy -->
 
@@ -554,10 +502,10 @@ $ git remote -v
 The above command will return output similar to the following:
 
 ```bash
-origin	git@github.com:yourusername/developer.git (fetch)
-origin	git@github.com:yourusername/developer.git (push)
-upstream	https://github.com/fermyon/developer (fetch)
-upstream	https://github.com/fermyon/developer (push)
+origin	git@github.com:yourusername/spin-docs.git (fetch)
+origin	git@github.com:yourusername/spin-docs.git (push)
+upstream	https://github.com/spinframework/spin-docs (fetch)
+upstream	https://github.com/spinframework/spin-docs (push)
 ```
 
 Once you are satisfied go ahead and push your changes:

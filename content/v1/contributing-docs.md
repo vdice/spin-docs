@@ -34,7 +34,7 @@ keywords = "contribute contributing"
   - [10. Push Changes](#10-push-changes)
   - [11. Create a Pull Request](#11-create-a-pull-request)
 
-We are delighted that you are interested in making our developer documentation better. Thank you! We welcome and appreciate contributions of all types — opening issues, fixing typos, adding examples, one-liner code fixes, tests, or complete features.
+We are delighted that you are interested in making our documentation better. Thank you! We welcome and appreciate contributions of all types — opening issues, fixing typos, adding examples, one-liner code fixes, tests, or complete features.
 
 Any contribution and interaction to the Spin project MUST follow our [code of conduct](https://github.com/spinframework/governance). Thank you for being part of an inclusive and open community!
 
@@ -50,11 +50,11 @@ Tutorials are oriented toward learning. Tutorials are designed to get a user sta
 
 ### 2. How-To Guides
 
-How-to guides are oriented towards showing a user how to solve a problem, which leads them to be able to achieve their own goal. The how-to guide will follow a series of logical steps. Think of it as providing a recipe for the user's creativity. For example, you can show a user how to _develop a Spin application](/writing) without telling them what the application must do; that is up to the user's imagination.
+How-to guides are oriented towards showing a user how to solve a problem, which leads them to be able to achieve their own goal. The how-to guide will follow a series of logical steps. Think of it as providing a recipe for the user's creativity. For example, you can show a user how to _develop a Spin application_ without telling them what the application must do; that is up to the user's imagination.
 
 ### 3. Reference
 
-Reference resources are merely a dry description; describing the feature in its simplest form. A great example of a reference resource is the [Spin CLI Reference page](/spin/cli-reference). You will notice that the CLI Reference page simply lists all of the commands and available options.
+Reference resources are merely a dry description; describing the feature in its simplest form. A great example of a reference resource is the [Spin CLI Reference page](/cli-reference). You will notice that the CLI Reference page simply lists all of the commands and available options.
 
 ### 4. Explanation
 
@@ -64,7 +64,7 @@ An explanation resource is written using a deep-dive approach i.e. providing a d
 
 ### 1. Fork the Repository
 
-The first step is to fork the [docs repository](https://github.com/spinframework/spin-docs), from Spin's GitHub, to your own GitHub account. Ensure that you are forking the developer repository **to your own** GitHub account; where you have full editing privileges.
+The first step is to fork the [docs repository](https://github.com/spinframework/spin-docs), from spinframework's GitHub, to your own GitHub account. Ensure that you are forking the spin-docs repository **to your own** GitHub account; where you have full editing privileges.
 
 ### 2. Clone the Fork
 
@@ -131,7 +131,7 @@ If you want the code in a code block to be copyable with no "smarts" to remove t
 
 **Multi-tab code blocks**
 
-Multi-tab code blocks have recently been implemented. Examples can be seen in the [Spin](/spin/install#installing-spin) installer documentation and [Spin Key/Value documentation](/spin/key-value-store-tutorial#the-spin-toml-file). The above examples demonstrate how tabs can either represent platforms i.e. `Windows`, `Linux` and `macOS` or represent specific programming languages i.e. `Rust`, `JavaScript` and `Golang` etc. Here is a brief example of how to implement multi-tab code blocks when writing technical documentation for this site, using markdown.
+Examples of multi-tab code blocks can be seen in the [Spin](/install#installing-spin) installer documentation and [Spin Key/Value documentation](/key-value-store-tutorial#the-spin-toml-file). The above examples demonstrate how tabs can either represent platforms i.e. `Windows`, `Linux` and `macOS` or represent specific programming languages i.e. `Rust`, `JavaScript` and `Golang` etc. Here is a brief example of how to implement multi-tab code blocks when writing technical documentation for this site, using markdown.
 
 The first step to implementing multi-tab code blocks is placing the `enable_shortcodes = true` configuration at the start of the `.md` file. Specifically, in the `.md` file's frontmatter.
 
@@ -226,7 +226,7 @@ If you create content with many headings it is highly recommended to place a ToC
 
 Once you are satisfied with your contribution, you can programmatically check your content.
 
-If you have not done so already, please go ahead and perform the `npm install` command; to enable Node dependencies such as `markdownlint-cli2`. Simply run the following command, from the root of the developer repository:
+If you have not done so already, please go ahead and perform the `npm install` command; to enable Node dependencies such as `markdownlint-cli2`. Simply run the following command, from the root of the spin-docs repository:
 
 <!-- @selectiveCpy -->
 
@@ -234,7 +234,7 @@ If you have not done so already, please go ahead and perform the `npm install` c
 $ npm install
 ```
 
-With all Node dependencies installed, you can now check for broken links (which takes several minutes) and also lint your markdown files. Simply run the following command, from the root of the developer repository:
+With all Node dependencies installed, you can now check for broken links (which takes several minutes) and also lint your markdown files. Simply run the following command, from the root of the spin-docs repository:
 
 <!-- @selectiveCpy -->
 
@@ -253,11 +253,11 @@ npx markdownlint-cli2 content/spin/*.md \"#node_modules\"
 npx markdownlint-cli2 content/spin/install.md \"#node_modules\"
 ```
 
-**Note:** Whilst the `npm run test` command (which lints and also programmatically checks all URLs) does take extra time to complete it **must** be utilized before you [push changes](#10-push-changes); preventing the potential pushing of broken URLs to the developer documentation site.
+**Note:** Whilst the `npm run test` command (which lints and also programmatically checks all URLs) does take extra time to complete it **must** be utilized before you [push changes](#10-push-changes); preventing the potential pushing of broken URLs to the documentation site.
 
 ### 6.2 Indexing Your Content
 
-The developer documentation site implements in-house search. A new index is automatically generated for you when your contribution is merged into the developer documentation repository. This is done via a GitHub action. The following section explains how to alter content to increase search visibility for your content.
+The Spin documentation site implements in-house search. A new index is automatically generated for you when your contribution is merged into the documentation repository. This is done via a GitHub action. The following section explains how to alter content to increase search visibility for your content.
 
 ### 6.3 Increasing Search Visibility For Your Content
 
@@ -290,13 +290,13 @@ When using the above `@searchTerm` feature, please note the following:
 - the words must be separated by a space i.e. <!-- @searchTerm "port listen request" -->
 - these keywords will be boosted in the search results by at least one order of magnitude; so please use them with caution, so as not to displace other valid pages containing similar content.
 
-Example: If you search for the word "homing", the results will point you to the previous heading in this specific section of the developer documentation.
+Example: If you search for the word "homing", the results will point you to the previous heading in this specific section of the documentation.
 
 ![homing example](/static/image/homing.png)
 
 ### 6.4 The Edit On GitHub Button
 
-Each markdown file in the developer documentation requires a link to its GitHub page for the site to correctly render the "Edit on GitHub" button for that page.
+Each markdown file in the documentation requires a link to its GitHub page for the site to correctly render the "Edit on GitHub" button for that page.
 
 ![edit on github](/static/image/edit-on-github.png)
 
@@ -371,7 +371,7 @@ Let's take a quick look at how you can use the `bart` CLI to check any content t
 
 ### 6.7 Checking Your Content - Preview a Documentation Page on Localhost
 
-You can host your changes to the developer documentation on your own machine (localhost) by using the following `spin` commands: 
+You can host your changes to the documentation on your own machine (localhost) by using the following `spin` commands: 
 
 <!-- @selectiveCpy -->
 
@@ -384,11 +384,11 @@ $ spin build
 $ spin up -e "PREVIEW_MODE=1"
 ```
 
-> Please note: using the `PREVIEW_MODE=1` as part of a `spin` command is safe on localhost and allows you to view content (even if the `date` setting in the content's `.md` is set to a future date). It is often the case that you will be checking content before the publishing date via your system. The developer documentation's manifest file `spin.toml` has the `PREVIEW_MODE` set to `0` i.e. `environment = { PREVIEW_MODE = "0" }`. This `spin.toml` file is correct for a production environment and should always be `0` (so that the CMS adheres to the publishing `date` setting for content on the public site). Simply put, you can use `PREVIEW_MODE=1` safely in your command line on your locahost but you should never update the `spin.toml` file (in this regard).
+> Please note: using the `PREVIEW_MODE=1` as part of a `spin` command is safe on localhost and allows you to view content (even if the `date` setting in the content's `.md` is set to a future date). It is often the case that you will be checking content before the publishing date via your system. The documentation's manifest file `spin.toml` has the `PREVIEW_MODE` set to `0` i.e. `environment = { PREVIEW_MODE = "0" }`. This `spin.toml` file is correct for a production environment and should always be `0` (so that the CMS adheres to the publishing `date` setting for content on the public site). Simply put, you can use `PREVIEW_MODE=1` safely in your command line on your locahost but you should never update the `spin.toml` file (in this regard).
 
 ### 7. Checking Web Pages
 
-The `bart check` command can be used to check the content. Simply pass in the content as a parameter. The developer documentation [uses shortcodes](/bartholomew/shortcodes), so always pass `--shortcodes ./shortcodes` as shown below:
+The `bart check` command can be used to check the content. Simply pass in the content as a parameter. The documentation [uses shortcodes](https://developer.fermyon.com/bartholomew/shortcodes), so always pass `--shortcodes ./shortcodes` as shown below:
 
 <!-- @selectiveCpy -->
 
@@ -408,7 +408,7 @@ shortcodes: registering blockEnd
 
 Once your changes have been checked, go ahead and add your changes by moving to a top-level directory, under which your changes exist i.e. `cd ~/spin-docs`.
 
-Add your changes by running the following command, from the root of the developer repository:
+Add your changes by running the following command, from the root of the spin-docs repository:
 
 <!-- @selectiveCpy -->
 
@@ -458,8 +458,8 @@ $ git remote -v
 The above command will return output similar to the following:
 
 ```bash
-origin	git@github.com:yourusername/developer.git (fetch)
-origin	git@github.com:yourusername/developer.git (push)
+origin	git@github.com:yourusername/spin-docs.git (fetch)
+origin	git@github.com:yourusername/spin-docs.git (push)
 upstream	https://github.com/spinframework/spin-docs (fetch)
 upstream	https://github.com/spinframework/spin-docs (push)
 ```
