@@ -7,7 +7,7 @@ on:
 jobs:
   deploy-preview:
     runs-on: ubuntu-24.04
-    if: ${{ !github.event.pull_request.head.repo.fork }}
+    # if: ${{ !github.event.pull_request.head.repo.fork }}
     name: Build and deploy
     steps:
       - uses: actions/checkout@v4
