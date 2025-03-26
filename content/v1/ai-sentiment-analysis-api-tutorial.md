@@ -887,7 +887,7 @@ route = "/internal/kv-explorer/..."
 
 ### Building and Deploying Your Spin Application
 
-**Note:** Running inferencing on localhost (your CPU) is not as optimal as deploying to Fermyon Cloud's Serverless AI (where inferencing is performed by high-powered GPUs). You can skip this `spin build --up` step and move straight to `spin cloud deploy` if you:
+**Note:** Running inferencing on localhost (your CPU) is not as optimal as deploying to a dedicated Serverless AI platform (where inferencing is performed by high-powered GPUs). You can skip this `spin build --up` step and move straight to deployment if you:
 
 - a) are using one of the 3 supported models above,
 - b) have configured your `spin.toml` file to explicitly configure the model (as shown above)
