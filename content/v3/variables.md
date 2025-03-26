@@ -297,4 +297,4 @@ If you run into the following error, you've most likely not configured the compo
 Handler returned an error: Error::Undefined("no variable for \"<component-id>\".\"your-variable\"")
 ```
 
-To fix this, edit the `spin.toml` and add to the `[component.<component-id>.variables]` table a line such as `<your-variable> = "{{ app-variable }}".` See [above](https://spinframework.com/v3/variables#adding-variables-to-your-applications) for more information.
+To fix this, edit the `spin.toml` and add to the `[component.<component-id>.variables]` table a line such as `<your-variable> = "{{ app-variable }}".` See [above](https://spinframework.dev/v3/variables#adding-variables-to-your-applications) for more information.

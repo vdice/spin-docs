@@ -3,7 +3,7 @@ template = "main"
 date = "2023-04-14T00:22:56Z"
 enable_shortcodes = true
 [extra]
-canonical_url = "https://spinframework.com/v2/sqlite-api-guide"
+canonical_url = "https://spinframework.dev/v2/sqlite-api-guide"
 url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v1/sqlite-api-guide.md"
 
 ---

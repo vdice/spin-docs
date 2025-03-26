@@ -1,5 +1,4 @@
 title = "Spin Docs"
-# base_url = "https://spinframework.com"
 base_url = ""
 about = "Spin is an open-source multi-language framework and CLI for building and deploying WebAssembly apps."
 index_site_pages = ["sitemap", "home", "changelog", "hub_list_api"]

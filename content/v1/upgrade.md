@@ -3,7 +3,7 @@ template = "main"
 date = "2023-05-01T00:01:01Z"
 enable_shortcodes = true
 [extra]
-canonical_url = "https://spinframework.com/v2/upgrade"
+canonical_url = "https://spinframework.dev/v2/upgrade"
 url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v1/upgrade.md"
 
 ---
