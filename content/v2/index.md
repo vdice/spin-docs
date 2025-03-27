@@ -28,4 +28,3 @@ Or dive into the documentation and get started:
 - [Take Spin for a spin](quickstart)
 - [Install Spin](install)
 - [Learn how to write Spin applications](writing-apps)
-- [Run your Spin applications in the Fermyon Cloud](/cloud/index)

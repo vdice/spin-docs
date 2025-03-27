@@ -15,11 +15,6 @@ follow [this guide](/running-app).
 
 Spin applications can be deployed to a Kubernetes cluster with [SpinKube](https://www.spinkube.dev/docs/overview/) - an open source project that streamlines the experience of developing, deploying, and operating Wasm workloads on Kubernetes. Like Spin, SpinKube is a CNCF Sandbox project.
 
-
 ## Fermyon Cloud
 
-[Fermyon Cloud](/cloud) is a self-service application platform for WebAssembly-based serverless functions and microservices. It enables you to run Spin applications, at scale, in the cloud, without any infrastructure setup or maintenance required.
-
-## Fermyon Platform
-
-[Fermyon Platform](https://www.fermyon.com/platform) is a self-hosted platform for Spin applications.
+[Fermyon Cloud](https://developer.fermyon.com/cloud) is a self-service application platform for WebAssembly-based serverless functions and microservices. It enables you to run Spin applications, at scale, in the cloud, without any infrastructure setup or maintenance required.

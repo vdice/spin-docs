@@ -183,7 +183,7 @@ The models need to be in a particular format for Spin to be able to use them (qu
 
 Next, we need to create the appropriate folder structure from within the application directory (alongside our `spin.toml` file). The code below demonstrates the variations in folder structure depending on which model is being used. Once the folder structure is in place, we then fetch the pre-trained AI model for our application:
 
-> Note: Optional, but highly recommended, is to use the [Spin Cloud GPU component](https://github.com/spinframework/spin-cloud-gpu). This offloads inferencing to Fermyon Cloud GPUs, and thus requires a free account to [Fermyon Cloud Serverless AI](https://www.fermyon.com/serverless-ai). This would replace the following steps of having to download the three models below.
+> Note: Optional, but highly recommended, is to use the [Spin Cloud GPU component](https://github.com/fermyon/spin-cloud-gpu). This offloads inferencing to Fermyon Cloud GPUs, and thus requires a free account to [Fermyon Cloud Serverless AI](https://www.fermyon.com/serverless-ai). This would replace the following steps of having to download the three models below.
 
 **llama2-chat example download**
 
