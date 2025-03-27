@@ -3,7 +3,7 @@ template = "main"
 date = "2023-02-1T00:22:56Z"
 [extra]
 canonical_url = "https://spinframework.dev/v2/plugin-authoring"
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v1/plugin-authoring.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v1/plugin-authoring.md"
 
 ---
 - [What Are Spin Plugins?](#what-are-spin-plugins)

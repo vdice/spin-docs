@@ -4,7 +4,7 @@ date = "2023-02-13T00:00:00Z"
 enable_shortcodes = true
 [extra]
 canonical_url = "https://spinframework.dev/v2/registry-tutorial"
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v1/registry-tutorial.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v1/registry-tutorial.md"
 
 ---
 - [Spin Registry Support](#spin-registry-support)

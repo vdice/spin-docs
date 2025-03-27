@@ -2,7 +2,7 @@ title = "API Support Overview"
 template = "main"
 date = "2023-11-04T00:00:01Z"
 [extra]
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v2/api-guides-overview.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v2/api-guides-overview.md"
 
 ---
 

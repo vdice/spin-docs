@@ -5,7 +5,7 @@ template = "main"
 tags = ["ai", "serverless", "getting started"]
 enable_shortcodes = true
 [extra]
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v2/serverless-ai-hello-world.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v2/serverless-ai-hello-world.md"
 
 ---
 

@@ -2,7 +2,7 @@ title = "Deploy Options"
 template = "main"
 date = "2023-11-04T00:00:01Z"
 [extra]
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v3/deploying-to-fermyon.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v3/deploying-to-fermyon.md"
 
 ---
 

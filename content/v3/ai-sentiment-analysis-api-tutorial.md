@@ -3,7 +3,7 @@ template = "main"
 date = "2023-11-04T00:00:01Z"
 enable_shortcodes = true
 [extra]
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v3/ai-sentiment-analysis-api-tutorial.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v3/ai-sentiment-analysis-api-tutorial.md"
 
 ---
 

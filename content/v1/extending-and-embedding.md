@@ -3,7 +3,7 @@ template = "main"
 date = "2022-03-14T00:22:56Z"
 [extra]
 canonical_url = "https://spinframework.dev/v2/extending-and-embedding"
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v1/extending-and-embedding.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v1/extending-and-embedding.md"
 
 ---
 - [Other Ways to Extend and Use Spin](#other-ways-to-extend-and-use-spin)

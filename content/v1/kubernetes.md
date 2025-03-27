@@ -4,7 +4,7 @@ date = "2023-03-01T00:01:01Z"
 enable_shortcodes = true
 [extra]
 canonical_url = "https://spinframework.dev/v2/kubernetes"
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v1/kubernetes.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v1/kubernetes.md"
 
 ---
 - [Why Use Spin With Kubernetes?](#why-use-spin-with-kubernetes)

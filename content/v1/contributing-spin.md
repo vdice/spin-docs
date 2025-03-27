@@ -3,7 +3,7 @@ template = "main"
 date = "2022-03-14T00:22:56Z"
 [extra]
 canonical_url = "https://spinframework.dev/v3/contributing-spin"
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v3/contributing-spin.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v3/contributing-spin.md"
 
 ---
 - [Making Code Contributions to Spin](#making-code-contributions-to-spin)

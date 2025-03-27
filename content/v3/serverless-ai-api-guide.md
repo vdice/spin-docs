@@ -3,7 +3,7 @@ template = "main"
 date = "2023-11-04T00:00:01Z"
 enable_shortcodes = true
 [extra]
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v3/serverless-ai-api-guide.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v3/serverless-ai-api-guide.md"
 
 ---
 - [Using Serverless AI From Applications](#using-serverless-ai-from-applications)

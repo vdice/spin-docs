@@ -4,7 +4,7 @@ date = "2023-09-05T09:00:00Z"
 enable_shortcodes = true
 [extra]
 canonical_url = "https://spinframework.dev/v2/serverless-ai-api-guide"
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v1/serverless-ai-api-guide.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v1/serverless-ai-api-guide.md"
 
 ---
 - [Using Serverless AI From Applications](#using-serverless-ai-from-applications)

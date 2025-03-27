@@ -6,7 +6,7 @@ tags = ["ai", "serverless", "getting started"]
 enable_shortcodes = true
 [extra]
 canonical_url = "https://spinframework.dev/v2/serverless-ai-hello-world"
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v1/serverless-ai-hello-world.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v1/serverless-ai-hello-world.md"
 
 ---
 

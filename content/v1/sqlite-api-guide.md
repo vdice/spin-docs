@@ -4,7 +4,7 @@ date = "2023-04-14T00:22:56Z"
 enable_shortcodes = true
 [extra]
 canonical_url = "https://spinframework.dev/v2/sqlite-api-guide"
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v1/sqlite-api-guide.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v1/sqlite-api-guide.md"
 
 ---
 - [Granting SQLite Database Permissions to Components](#granting-sqlite-database-permissions-to-components)

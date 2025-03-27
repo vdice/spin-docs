@@ -3,7 +3,7 @@ template = "main"
 date = "2022-03-14T00:22:56Z"
 [extra]
 canonical_url = "https://spinframework.dev/v2/manifest-reference"
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v1/manifest-reference.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v1/manifest-reference.md"
 
 ---
 - [Format](#format)

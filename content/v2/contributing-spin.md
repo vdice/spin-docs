@@ -2,7 +2,7 @@ title = "Contributing to Spin"
 template = "main"
 date = "2023-11-04T00:00:01Z"
 [extra]
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v2/contributing-spin.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v2/contributing-spin.md"
 
 ---
 - [Making Code Contributions to Spin](#making-code-contributions-to-spin)

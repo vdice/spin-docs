@@ -22,7 +22,7 @@ let spin_pages = [];
 // Get each page, assigning it to {path: object}.
 let keys = pages.keys();
 for item in keys {
-    if item.index_of("/content/spin/") == 0 {
+    if item.index_of("/content/") == 0 {
         // Remove /content and .md
         let path = item.sub_string(8);
         let page = pages[item];

@@ -2,7 +2,7 @@ title = "Contributing to Docs"
 template = "main"
 date = "2023-11-04T00:00:01Z"
 [extra]
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v2/contributing-docs.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v2/contributing-docs.md"
 keywords = "contribute contributing"
 
 ---
@@ -276,9 +276,9 @@ $ npm run test
 
 ```bash
 # Example of how to lint all Markdown files in a local folder (in this case the spin folder) 
-npx markdownlint-cli2 content/spin/*.md \"#node_modules\"
+npx markdownlint-cli2 content/*.md \"#node_modules\"
 # Example of how to lint a local Markdown file
-npx markdownlint-cli2 content/spin/install.md \"#node_modules\"
+npx markdownlint-cli2 content/install.md \"#node_modules\"
 ```
 
 **Note:** Whilst the `npm run test` command (which lints and also programmatically checks all URLs) does take extra time to complete it **must** be utilized before you [push changes](#10-push-changes); preventing the potential pushing of broken URLs to the documentation site.
@@ -332,7 +332,7 @@ If you create a new markdown file and/or you notice a file without the explicit 
 
 ```
 [extra]
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v2/contributing-docs.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v2/contributing-docs.md"
 ```
 
 ### 6.5 How To Properly Edit CSS Styles
@@ -435,16 +435,16 @@ The `bart check` command can be used to check the content. Simply pass in the co
 <!-- @selectiveCpy -->
 
 ```bash
-$ bart check --shortcodes ./shortcodes content/spin/variables.md
+$ bart check --shortcodes ./shortcodes content/variables.md
 shortcodes: registering alert
 shortcodes: registering details
 shortcodes: registering tabs
 shortcodes: registering startTab
 shortcodes: registering blockEnd
-✅ content/spin/variables.md
+✅ content/variables.md
 ```
 
-> Note: `using a wildcard `*` will check a whole directory via a single command. For example, running `bart check --shortcodes ./shortcodes content/spin/*` will check all markdown files in the Spin project's documentation section.
+> Note: `using a wildcard `*` will check a whole directory via a single command. For example, running `bart check --shortcodes ./shortcodes content/*` will check all markdown files in the Spin project's documentation section.
 
 ### 8. Add Changes
 
