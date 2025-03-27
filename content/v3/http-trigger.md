@@ -256,19 +256,25 @@ For a full Rust SDK reference, see the [Rust Spin SDK documentation](https://doc
 
 {{ startTab "TypeScript"}}
 
-> [**Want to go straight to the reference documentation?**  Find it here.](https://fermyon.github.io/spin-js-sdk/)
+> [**Want to go straight to the reference documentation?**  Find it here.](https://spinframework.github.io/spin-js-sdk/stable/)
 
-The user must a define a function named `handler` which the SDK attaches to the [`FetchEvent` listener](https://developer.mozilla.org/en-US/docs/Web/API/FetchEvent). Note that the incoming HTTP event is translated to a `FetchEvent`.
+Building a Spin HTTP component with the JavaScript/TypeScript SDK now involves adding an event listener for the `fetch` event. This event listener handles incoming HTTP requests and allows you to construct and return HTTP responses.
 
-The handler function takes in two arguments a [Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) and a [ResponseBuilder](https://fermyon.github.io/spin-js-sdk/classes/ResponseBuilder.html)
+Below is a complete implementation for such a component in TypeScript:
 
 ```ts
-import { ResponseBuilder } from "@fermyon/spin-sdk";
+import { AutoRouter } from 'itty-router';
 
-export async function handler(req: Request, res: ResponseBuilder) {
-    console.log(req);
-    res.send("hello universe");
-}
+let router = AutoRouter();
+
+router
+    .get("/", () => new Response("hello universe"))
+    .get('/hello/:name', ({ name }) => `Hello, ${name}!`)
+
+//@ts-ignore
+addEventListener('fetch', async (event: FetchEvent) => {
+    event.respondWith(router.fetch(event.request));
+});
 ```
 
 {{ blockEnd }}
@@ -490,11 +496,11 @@ When exposing HTTP triggers using HTTPS you must provide `spin up` with a TLS ce
 
 ### Trigger Options
 
-The `spin up` command's `--tls-cert` and `--tls-key` trigger options provide a way for you to specify both a TLS certificate and a private key (whilst running the `spin up` command).
+The `spin up` command accepts some HTTP-trigger-specific options:
 
-The `--tls-cert` option specifies the path to the TLS certificate to use for HTTPS, if this is not set, normal HTTP will be used. The certificate should be in PEM format. 
+The `--listen` option sets the local IP and port that `spin up` should listen to for requests. By default, it listens to `localhost:3000`.
 
-The `--tls-key` option specifies the path to the private key to use for HTTPS, if this is not set, normal HTTP will be used. The key should be in PKCS#8 format.
+The `--tls-cert` and `--tls-key` options provide a way for you to configure a TLS certificate. If they are not set, plaintext HTTP will be used. The `--tls-cert` option specifies the path to the TLS certificate to use for HTTPS. The certificate should be in PEM format. The `--tls-key` option specifies the path to the private key to use for HTTPS. The key should be in PKCS#8 format.
 
 ### Environment Variables
 
