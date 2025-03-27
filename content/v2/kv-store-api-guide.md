@@ -116,7 +116,7 @@ export async function handler(req: Request, res: ResponseBuilder) {
 
 {{ startTab "Python"}}
 
-> [**Want to go straight to the reference documentation?** Find it here.](https://fermyon.github.io/spin-python-sdk/key_value.html)
+> [**Want to go straight to the reference documentation?** Find it here.](https://spinframework.github.io/spin-python-sdk/key_value.html)
 
 The key value functions are provided through the `spin_key_value` module in the Python SDK. For example:
 
@@ -141,7 +141,7 @@ class IncomingHandler(http.IncomingHandler):
 **General Notes**
 - The Python SDK doesn't surface the `close` operation. It automatically closes all stores at the end of the request; there's no way to close them early.
 
-[`get` **Operation**](https://fermyon.github.io/spin-python-sdk/wit/imports/key_value.html#spin_sdk.wit.imports.key_value.Store.get)
+[`get` **Operation**](https://spinframework.github.io/spin-python-sdk/wit/imports/key_value.html#spin_sdk.wit.imports.key_value.Store.get)
 - If a key does not exist, it returns `None`
 
 {{ blockEnd }}

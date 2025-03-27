@@ -80,7 +80,7 @@ mount = "secret"
 
 #### Vault Application Variable Provider Example
 
-1. [Install Vault](https://developer.hashicorp.com/vault/tutorials/getting-started/getting-started-install).
+1. [Install Vault](https://developer.hashicorp.com/vault/tutorials/get-started/install-binary).
 2. Start Vault:
 
 <!-- @selectiveCpy -->

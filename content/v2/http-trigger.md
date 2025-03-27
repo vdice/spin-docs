@@ -284,9 +284,9 @@ export async function handler(req: Request, res: ResponseBuilder) {
 
 {{ startTab "Python"}}
 
-> [**Want to go straight to the reference documentation?**  Find it here.](https://fermyon.github.io/spin-python-sdk/)
+> [**Want to go straight to the reference documentation?**  Find it here.](https://spinframework.github.io/spin-python-sdk/)
 
-In Python, the application must define a top-level class named IncomingHandler which inherits from [IncomingHandler](https://fermyon.github.io/spin-python-sdk/http/index.html#spin_sdk.http.IncomingHandler), overriding the `handle_request` method.
+In Python, the application must define a top-level class named IncomingHandler which inherits from [IncomingHandler](https://spinframework.github.io/spin-python-sdk/http/index.html#spin_sdk.http.IncomingHandler), overriding the `handle_request` method.
 
 ```python
 from spin_sdk import http

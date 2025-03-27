@@ -161,9 +161,9 @@ export async function handler(req: Request, res: ResponseBuilder) {
 
 {{ startTab "Python"}}
 
-> [**Want to go straight to the reference documentation?**  Find it here.](https://fermyon.github.io/spin-python-sdk/variables.html)
+> [**Want to go straight to the reference documentation?**  Find it here.](https://spinframework.github.io/spin-python-sdk/variables.html)
 
-The `variables` module has a function called `get`(https://fermyon.github.io/spin-python-sdk/variables.html#spin_sdk.variables.get).
+The `variables` module has a function called `get`(https://spinframework.github.io/spin-python-sdk/variables.html#spin_sdk.variables.get).
 
 ```py
 from spin_sdk.http import IncomingHandler, Request, Response, send

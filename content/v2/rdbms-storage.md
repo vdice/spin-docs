@@ -104,7 +104,7 @@ export async function handler(_req: Request, res: ResponseBuilder) {
 
 {{ startTab "Python"}}
 
-> [**Want to go straight to the reference documentation?**  Find it here.](https://fermyon.github.io/spin-python-sdk/)
+> [**Want to go straight to the reference documentation?**  Find it here.](https://spinframework.github.io/spin-python-sdk/)
 
 The code below is an [Outbound MySQL example](https://github.com/spinframework/spin-python-sdk/tree/main/examples/spin-mysql). There is also an outbound [PostgreSQL example](https://github.com/spinframework/spin-python-sdk/tree/main/examples/spin-postgres) available.
 

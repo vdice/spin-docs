@@ -171,9 +171,9 @@ addEventListener('fetch', async (event: FetchEvent) => {
 
 {{ startTab "Python"}}
 
-> [**Want to go straight to the reference documentation?**  Find it here.](https://fermyon.github.io/spin-python-sdk/variables.html)
+> [**Want to go straight to the reference documentation?**  Find it here.](https://spinframework.github.io/spin-python-sdk/variables.html)
 
-The `variables` module has a function called `get`(https://fermyon.github.io/spin-python-sdk/variables.html#spin_sdk.variables.get).
+The `variables` module has a function called `get`(https://spinframework.github.io/spin-python-sdk/variables.html#spin_sdk.variables.get).
 
 ```py
 from spin_sdk.http import IncomingHandler, Request, Response, send
@@ -295,4 +295,4 @@ If you run into the following error, you've most likely not configured the compo
 Handler returned an error: Error::Undefined("no variable for \"<component-id>\".\"your-variable\"")
 ```
 
-To fix this, edit the `spin.toml` and add to the `[component.<component-id>.variables]` table a line such as `<your-variable> = "{{ app-variable }}".` See [above](https://spinframework.dev/v3/variables#adding-variables-to-your-applications) for more information.
+To fix this, edit the `spin.toml` and add to the `[component.<component-id>.variables]` table a line such as `<your-variable> = "{{ app-variable }}".` See [above](#adding-variables-to-your-applications) for more information.

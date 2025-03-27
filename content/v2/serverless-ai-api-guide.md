@@ -148,7 +148,7 @@ export async function handler(req: Request, res: ResponseBuilder) {
 
 {{ startTab "Python"}}
 
-> [**Want to go straight to the reference documentation?**  Find it here.](https://fermyon.github.io/spin-python-sdk/llm.html)
+> [**Want to go straight to the reference documentation?**  Find it here.](https://spinframework.github.io/spin-python-sdk/llm.html)
 
 ```python
 from spin_sdk import http
@@ -166,12 +166,12 @@ class IncomingHandler(http.IncomingHandler):
 
 **General Notes**
 
-[`infer` operation](https://fermyon.github.io/spin-python-sdk/llm.html#spin_sdk.llm.infer):
+[`infer` operation](https://spinframework.github.io/spin-python-sdk/llm.html#spin_sdk.llm.infer):
 
 - The model name is passed in as a string (as shown above; `"llama2-chat"`).
-[`infer_with_options` operation](https://fermyon.github.io/spin-python-sdk/llm.html#spin_sdk.llm.infer_with_options):
+[`infer_with_options` operation](https://spinframework.github.io/spin-python-sdk/llm.html#spin_sdk.llm.infer_with_options):
 
-- It takes in a model name, prompt text, and optionally a [parameter object](https://fermyon.github.io/spin-python-sdk/llm.html#spin_sdk.llm.InferencingParams) to control the inferencing. 
+- It takes in a model name, prompt text, and optionally a [parameter object](https://spinframework.github.io/spin-python-sdk/llm.html#spin_sdk.llm.InferencingParams) to control the inferencing. 
 
 {{ blockEnd }}
 
