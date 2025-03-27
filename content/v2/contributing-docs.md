@@ -58,7 +58,7 @@ Reference resources are merely a dry description; describing the feature in its 
 
 ### 4. Explanation
 
-An explanation resource is written using a deep-dive approach i.e. providing a deep explanation with the view to impart a deep understanding of a particular concept, feature or product. You may find your contribution is so in-depth that it becomes a long form article like a blog post. If that is the case, please get in touch and we can discuss options around getting your content published on another platform; like the [Spin Blog](https://spinframework.dev/blog).
+An explanation resource is written using a deep-dive approach i.e. providing a deep explanation with the view to impart a deep understanding of a particular concept, feature or product. You may find your contribution is so in-depth that it becomes a long form article like a blog post. If that is the case, consider an addition to the Spin Blog.
 
 ## Technical Documentation Procedure
 
