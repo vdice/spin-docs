@@ -69,47 +69,21 @@ report="$(mktemp)"
 blc_error=false
 blc --recursive http://127.0.0.1:3000                                                                                                                                                       \
                                                                                                                                                                                             \
-    `## Ignore searching Edit links`                                                                                                                                                        \
-    --exclude 'https://github.com/fermyon/developer/blob/main/content/*'                                                                                                                    \
-                                                                                                                                                                                            \
     `## returns 403`                                                                                                                                                                        \
     --exclude 'https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits'                                                                            \
     --exclude 'https://docs.github.com/en/authentication/managing-commit-signature-verification/adding-a-gpg-key-to-your-github-account'                                                    \
     --exclude 'https://docs.github.com/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/remembering-your-github-username-or-email'    \
     --exclude 'https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification'                                                        \
-    --exclude 'https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template'                                                            \
-    --exclude 'https://twitter.com/fermyontech'                                                                                                                                             \
-    --exclude 'https://twitter.com/fermyontech/status/1641537393818738710'                                                                                                                  \
-    --exclude 'https://www.godaddy.com'                                                                                                                                                     \
+    --exclude 'https://twitter.com/spinframework'                                                                                                                                           \
     --exclude 'https://linux.die.net/man/1/which'                                                                                                                                           \
                                                                                                                                                                                             \
     `## false positives`                                                                                                                                                                    \
     --exclude 'https://www.gnu.org/software/coreutils/'                                                                                                                                     \
-    --exclude 'https://events.hashicorp.com/hashitalksdeploy'                                                                                                                               \
-    --exclude 'https://dotnet.microsoft.com/en-us/download/dotnet/8.0'                                                                                                                      \
-    --exclude 'https://www.developerweek.com/'                                                                                                                                              \
-    --exclude 'https://marketplace.visualstudio.com/items?itemName=fermyon.spin-vscode&ssr=false#overview'                                                                                  \
-    --exclude 'https://marketplace.visualstudio.com/items?itemName=fermyon.autobindle'                                                                                                      \
     --exclude 'https://crates.io/'                                                                                                                                                          \
     --exclude 'https://crates.io/crates/bytes'                                                                                                                                              \
     --exclude 'https://crates.io/crates/http'                                                                                                                                               \
     --exclude 'https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one'                                                                                              \
-    --exclude 'https://events.hashicorp.com/hashitalksdeploy'                                                                                                                               \
-    --exclude 'https://www.instagram.com/fermyontech/'                                                                                                                                      \
-    --exclude 'https://www.linkedin.com/company/fermyon/'                                                                                                                                   \
-    --exclude 'https://support.google.com/webmasters/answer/7552505'                                                                                                                        \
-    --exclude 'https://www.namecheap.com/support/knowledgebase/article.aspx/767/10/how-to-change-dns-for-a-domain/'                                                                         \
-    --exclude 'https://support.google.com/domains/answer/3290309?hl=en#'                                                                                                                    \
-    --exclude 'https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor'                                                                                                              \
-    --exclude 'https://www.reddit.com/r/Clojure/comments/jkznto/web_assembly_clojure_current_state/'                                                                                        \
-    --exclude 'https://www.reddit.com/r/Rlanguage/comments/b4izog/compile_r_to_webassembly_and_use_as_a_data/'                                                                              \
-    --exclude 'https://www.tutorialspoint.com/webassembly/webassembly_working_with_cplusplus.htm'                                                                                           \
-    --exclude 'http://localhost:16686/'                                                                                                                                                     \
-    --exclude 'http://localhost:5050/explore'                                                                                                                                               \
-    --exclude 'http://localhost:5050/explore'                                                                                                                                               \
-    --exclude 'https://stackshare.io/stackups/powershell-vs-webassembly'                                                                                                                   \
-    --exclude 'https://blog.cloudflare.com/cloudflare-workers-now-support-cobol/'                                                                                                                   \
-    --exclude 'https://support.google.com/webmasters/answer/9008080?hl=en' | tee "${report}" || blc_error=true
+    --exclude 'http://localhost:5050/explore' | tee "${report}" || blc_error=true
 
 cat "${report}" | grep "├─BROKEN─" > broken_links || true
 
