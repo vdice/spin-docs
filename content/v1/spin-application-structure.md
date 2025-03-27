@@ -4,7 +4,7 @@ date = "2023-08-20T00:00:00Z"
 enable_shortcodes = true
 [extra]
 canonical_url = "https://spinframework.dev/v2/spin-application-structure"
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v1/spin-application-structure.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v1/spin-application-structure.md"
 keywords = "structure"
 
 ---

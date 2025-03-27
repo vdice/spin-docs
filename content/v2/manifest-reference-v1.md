@@ -2,7 +2,7 @@ title = "Spin Application Manifest (Version 1) Reference"
 template = "main"
 date = "2023-11-04T00:00:01Z"
 [extra]
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v2/manifest-reference-v1.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v2/manifest-reference-v1.md"
 
 ---
 - [Format](#format)

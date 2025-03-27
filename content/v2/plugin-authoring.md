@@ -2,7 +2,7 @@ title = "Creating Spin Plugins"
 template = "main"
 date = "2023-11-04T00:00:01Z"
 [extra]
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v2/plugin-authoring.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v2/plugin-authoring.md"
 
 ---
 - [What Are Spin Plugins?](#what-are-spin-plugins)

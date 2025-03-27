@@ -4,7 +4,7 @@ date = "2022-06-14T00:22:56Z"
 enable_shortcodes = true
 [extra]
 canonical_url = "https://spinframework.dev/v2/variables"
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v1/variables.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v1/variables.md"
 
 ---
 - [Adding Variables to Your Applications](#adding-variables-to-your-applications)

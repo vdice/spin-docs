@@ -2,7 +2,7 @@ title = "Testing Applications"
 template = "main"
 date = "2024-05-05T00:00:01Z"
 [extra]
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v2/testing-apps.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v2/testing-apps.md"
 
 ---
 

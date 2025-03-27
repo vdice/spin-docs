@@ -4,7 +4,7 @@ date = "2022-03-14T00:22:56Z"
 enable_shortcodes = true
 [extra]
 canonical_url = "https://spinframework.dev/v2/running-apps"
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v1/running-apps.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v1/running-apps.md"
 
 ---
 - [Specifying the Application to Run](#specifying-the-application-to-run)

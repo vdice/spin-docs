@@ -4,7 +4,7 @@ date = "2023-09-05T09:00:00Z"
 enable_shortcodes = true
 [extra]
 canonical_url = "https://spinframework.dev/v2/ai-sentiment-analysis-api-tutorial"
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v1/ai-sentiment-analysis-api-tutorial.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v1/ai-sentiment-analysis-api-tutorial.md"
 
 ---
 - [Tutorial Prerequisites](#tutorial-prerequisites)

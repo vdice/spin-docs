@@ -2,7 +2,7 @@ title = "Building Spin Components in Python"
 template = "main"
 date = "2023-11-04T00:00:01Z"
 [extra]
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v2/python-components.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v2/python-components.md"
 
 ---
 - [Prerequisite](#prerequisite)

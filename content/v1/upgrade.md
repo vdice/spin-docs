@@ -4,7 +4,7 @@ date = "2023-05-01T00:01:01Z"
 enable_shortcodes = true
 [extra]
 canonical_url = "https://spinframework.dev/v2/upgrade"
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v1/upgrade.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v1/upgrade.md"
 
 ---
 - [Are You on the Latest Version?](#are-you-on-the-latest-version)

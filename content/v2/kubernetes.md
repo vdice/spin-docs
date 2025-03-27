@@ -3,7 +3,7 @@ template = "main"
 date = "2024-03-07T00:00:01Z"
 enable_shortcodes = true
 [extra]
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v2/kubernetes.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v2/kubernetes.md"
 
 ---
 

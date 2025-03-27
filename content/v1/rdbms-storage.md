@@ -4,7 +4,7 @@ date = "2022-03-14T00:22:56Z"
 enable_shortcodes = true
 [extra]
 canonical_url = "https://spinframework.dev/v2/rdbms-storage"
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v1/rdbms-storage.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v1/rdbms-storage.md"
 
 ---
 - [Using MySQL and PostgreSQL From Applications](#using-mysql-and-postgresql-from-applications)

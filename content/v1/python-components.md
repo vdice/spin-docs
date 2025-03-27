@@ -3,7 +3,7 @@ template = "main"
 date = "2023-02-28T02:00:00Z"
 [extra]
 canonical_url = "https://spinframework.dev/v2/python-components"
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v1/python-components.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v1/python-components.md"
 
 ---
 - [Spin's Python Plugin](#spins-python-plugin)

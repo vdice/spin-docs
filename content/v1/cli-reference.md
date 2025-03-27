@@ -4,7 +4,7 @@ date = "2022-01-01T00:00:01Z"
 enable_shortcodes = true
 [extra]
 canonical_url = "https://spinframework.dev/v2/cli-reference"
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v1/cli-reference.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v1/cli-reference.md"
 
 ---
 - [spin add](#spin-add)

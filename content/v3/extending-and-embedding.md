@@ -2,7 +2,7 @@ title = "Extending and Embedding Spin"
 template = "main"
 date = "2023-11-04T00:00:01Z"
 [extra]
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v3/extending-and-embedding.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v3/extending-and-embedding.md"
 
 ---
 - [Extending Spin with a Custom Trigger](#extending-spin-with-a-custom-trigger)

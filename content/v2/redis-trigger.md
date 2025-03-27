@@ -3,7 +3,7 @@ template = "main"
 date = "2023-11-04T00:00:01Z"
 enable_shortcodes = true
 [extra]
-url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v2/redis-trigger.md"
+url = "https://github.com/spinframework/spin-docs/blob/main/content/v2/redis-trigger.md"
 
 ---
 - [Specifying a Redis Trigger](#specifying-a-redis-trigger)
