@@ -83,6 +83,7 @@ blc --recursive http://127.0.0.1:3000                                           
     --exclude 'https://crates.io/crates/bytes'                                                                                                                                              \
     --exclude 'https://crates.io/crates/http'                                                                                                                                               \
     --exclude 'https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one'                                                                                              \
+    --exclude 'http://localhost:16686/'                                                                                                                                                     \
     --exclude 'http://localhost:5050/explore' | tee "${report}" || blc_error=true
 
 cat "${report}" | grep "├─BROKEN─" > broken_links || true
