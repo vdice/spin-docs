@@ -9,10 +9,8 @@ export const handleRequest: HandleRequest = async function (request: HttpRequest
   let text = decoder.decode(bytes)
   let redirectList = JSON.parse(text)
 
-  let base = request.headers["spin-base-path"]
-  let route = request.headers["spin-component-route"]
-  let path = request.headers["spin-path-info"]
-  let reqPath = `${base}${route}${path}`.replace("//", "/")
+  let path = request.headers["spin-path-match-page"]
+  let reqPath = `/${path}`.replace("//", "/")
 
   let routeMatch = redirectList[reqPath] as string
 

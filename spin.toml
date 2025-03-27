@@ -32,7 +32,7 @@ route = "/hub/..."
 [[trigger.http]]
 id = "trigger-spin-version-proxy"
 component = "spin-version-proxy"
-route = "/spin/..."
+route = "/:page"
 
 [[trigger.http]]
 id = "trigger-bartholomew-spin-v1"
