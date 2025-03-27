@@ -9,7 +9,7 @@ url = "https://github.com/spinframework/spin-docs/blob/main/content/v3/deploying
 ### Running locally on your workstation 
 
 For instructions guiding you through running Spin apps on your development workstation,
-follow [this guide](/running-app).
+follow [this guide](/running-apps).
 
 ### Deploying to Kubernetes
 
