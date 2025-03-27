@@ -300,8 +300,6 @@ class IncomingHandler(http.IncomingHandler):
 
 In Go, you register the handler as a callback in your program's `init` function.  Call `spinhttp.Handle`, passing your handler as the sole argument.  Your handler takes a `http.Request` record, from the standard `net/http` package, and a `ResponseWriter` to construct the response.
 
-> The do-nothing `main` function is required by TinyGo but is not used; the action happens in the `init` function and handler callback.
-
 ```go
 package main
 
