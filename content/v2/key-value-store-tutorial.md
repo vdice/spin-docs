@@ -475,50 +475,6 @@ HTTP/1.1 404 Not Found
 
 As we can see above, there is currently no data found at the `/test` endpoint of our application.
 
-## (Optional) Deploy Your App To Fermyon Cloud
-
-Optionally, if you'd like to deploy your application and key value store to Fermyon Cloud here are the required steps. 
-
-First, login to your Fermyon Cloud account. If you do not have one already, this will take you through the signup process for a free account. 
-
-<!-- @selectiveCpy -->
-
-```bash
-$ spin login
-
-Copy your one-time code:
-
-XXXXXXXX
-
-...and open the authorization page in your browser:
-
-https://cloud.fermyon.com/device-authorization
-
-Waiting for device authorization...
-Device authorized!
-```
-
-Now that we have our dependencies squared away, let's deploy our application to Fermyon Cloud. From your application root folder, run the following command and opt to allow Fermyon Cloud to create a key value store on your behalf:
-
-<!-- @selectiveCpy -->
-
-```bash
-$ spin cloud deploy
-spin deploy
-Uploading spin-key-value version 0.1.0-r234fe5a4 to Fermyon Cloud...
-Deploying...
-App "spin-key-value" accesses a key value store labeled "default"
-Would you like to link an existing key value store or create a new key value store?:
-> Use an existing key value store and link app to it
-  Create a new key value store and link the app to it
-```
-
->> If you're interested in learning more about how to link your Spin app to different key value store instances on Fermyon Cloud, check out our [Key Value Links and Labels tutorial](../../cloud/linking-applications-to-resources-using-labels.md). 
-
-Congratulations, you have a Spin application and associated Key Value store running up in Fermyon Cloud! You can visit it by clicking on the Spin application's domain name generated in the CLI output, which has the following pattern: `spin-key-value-<RANDOM>.fermyon.app`. 
-
 ## Next Steps
 
 * Explore the contents of your Key Value store with the [Key Value Store Explorer template](../../hub/preview/template_kv_explorer)
-* Learn about linking your applications to different [Key Value Stores on Fermyon Cloud](../../cloud/kv-cloud-tutorial.md) 
-

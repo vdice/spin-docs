@@ -12,7 +12,7 @@ url = "https://github.com/spinframework/spin-docs/blob/main/content/spin/v2/depl
 
 ## Fermyon Cloud
 
-[Fermyon Cloud](/cloud) is a self-service application platform for WebAssembly-based serverless functions and microservices. It enables you to run Spin applications, at scale, in the cloud, without any infrastructure setup or maintenance required.
+[Fermyon Cloud](https://developer.fermyon.com/cloud) is a self-service application platform for WebAssembly-based serverless functions and microservices. It enables you to run Spin applications, at scale, in the cloud, without any infrastructure setup or maintenance required.
 
 ## Fermyon Platform
 

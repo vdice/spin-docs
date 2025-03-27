@@ -926,25 +926,6 @@ class ModalSuggest {
                     "Deploy",
                     "/spin/deploying-to-fermyon/"
                 ]
-            },
-            {
-                project: "Cloud",
-                link1: [
-                    "Quickstart",
-                    "/cloud/quickstart"
-                ],
-                link2: [
-                    "VS Code",
-                    "/cloud/spin-vs-code-extension"
-                ],
-                link3: [
-                    "Support",
-                    "/cloud/support"
-                ],
-                link4: [
-                    "FAQ",
-                    "/cloud/faq"
-                ]
             }
         ];
         this.projectRecommendations = list("div.result-section", ProjectRecommendations);

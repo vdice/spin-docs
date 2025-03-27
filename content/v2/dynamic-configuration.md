@@ -262,8 +262,6 @@ container = "<cosmos-container>"
 
 Whilst a single default store may be sufficient for certain application use cases, each Spin application can be configured to support multiple stores of any `type`, as shown in the `runtime-config.toml` file below:
 
-> **Note:** At present, when deploying an application to Fermyon Cloud only the single "default" key-value store is supported. To see more about Spin support on Fermyon Cloud, visit the [limitations documentation](/cloud/faq#spin-limitations):
-
 ```toml
 # This defines a new store named user_data
 [key_value_store.user_data]
@@ -345,6 +343,6 @@ url = "http://example.com"
 auth_token = "<auth_token>"
 ```
 
-Currently, the remote compute option requires an user to deploy their own LLM proxy service. Fermyon Cloud users can do this using the [`cloud-gpu` plugin](https://github.com/spinframework/spin-cloud-gpu).  If you prefer to create and deploy your own proxy service, you can find a reference implementation of the proxy protocol in the [`spin-cloud-gpu plugin repository`](https://github.com/spinframework/spin-cloud-gpu/blob/main/fermyon-cloud-gpu/src/index.ts). 
+Currently, the remote compute option requires an user to deploy their own LLM proxy service. If you prefer to create and deploy your own proxy service, you can find a reference implementation of the proxy protocol in the [`spin-cloud-gpu plugin repository`](https://github.com/fermyon/spin-cloud-gpu/blob/main/fermyon-cloud-gpu/src/index.ts). 
 
 By default, components will not have access to the LLM models unless granted explicit access through the `component.ai_models` entry in the component manifest within `spin.toml`. See [Serverless AI](./serverless-ai-api-guide) for more details.
