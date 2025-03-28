@@ -44,7 +44,7 @@ Install Spin:
 $ brew install spinframework/tap/spin
 ```
 
-> Note: `brew install spin` will **not** install Spin framework. Spin is accessed from the `fermyon` tap, as shown above.
+> Note: `brew install spin` will **not** install Spin framework. Spin is accessed from the `spinframework` tap, as shown above.
 
 **Installer script**
 
@@ -106,7 +106,7 @@ Install Spin:
 $ brew install spinframework/tap/spin
 ```
 
-> Note: `brew install spin` will **not** install Spin framework. Spin is accessed from the `fermyon` tap, as shown above.
+> Note: `brew install spin` will **not** install Spin framework. Spin is accessed from the `spinframework` tap, as shown above.
 
 **Installer script**
 
