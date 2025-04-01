@@ -134,7 +134,7 @@ $ spin plugin install --file practice.json
 $ spin practice
 ```
 
-> While developing a plugin, you can [use the `pluginify` plugin to automate packaging and installation](https://developer.fermyon.com/hub/preview/plugin_spin_pluginify) for testing in the Spin environment. This saves going through the package-manifest-install cycle every time you want to try an update!
+> While developing a plugin, you can [use the `pluginify` plugin to automate packaging and installation](/hub/preview/plugin_spin_pluginify) for testing in the Spin environment. This saves going through the package-manifest-install cycle every time you want to try an update!
 
 ### Contributing a Plugin
 
