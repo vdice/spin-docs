@@ -13,7 +13,7 @@ Spin uses Wasm because it is **sandboxed, portable, and fast**.  Millisecond col
 
 Many languages have Wasm implementations, so **developers don't have to learn new languages or libraries**.
 
-Spin is **open source** and **built on standards**, meaning you can take your Spin applications anywhere.  There are Spin implementations for local development, for self-hosted servers, for Kubernetes, and for cloud-hosted services.
+Spin is **open source**, under the aegis of the [CNCF](https://www.cncf.io/), and **built on standards**, meaning you can take your Spin applications anywhere.  There are Spin implementations for local development, for self-hosted servers, for Kubernetes, and for cloud-hosted services.
 
 **Want to see the kinds of things people are building with Spin?**  Check out what's [Built With Spin](./see-what-people-have-built-with-spin)!
 
