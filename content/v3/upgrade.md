@@ -7,13 +7,15 @@ url = "https://github.com/spinframework/spin-docs/blob/main/content/v3/upgrade.m
 
 ---
 - [Are You on the Latest Version?](#are-you-on-the-latest-version)
-- [Upgrade Spin](#upgrade-spin)
-  - [Installer](#installer)
-  - [Homebrew](#homebrew)
-  - [Cargo](#cargo)
-  - [Source](#source)
+- [Upgrading Using the Installer](#upgrading-using-the-installer)
+- [Upgrading Using Homebrew](#upgrading-using-homebrew)
+- [Upgrading Using `cargo`](#upgrading-using-cargo)
+- [Upgrading by Building From Source](#upgrading-by-building-from-source)
+- [If You're Not Sure](#if-youre-not-sure)
 - [Troubleshooting](#troubleshooting)
   - [Not Seeing the Latest Version?](#not-seeing-the-latest-version)
+
+Spin can be installed in many ways, and therefore the upgrade procedure can differ between users. Here are a few suggested ways to upgrade Spin to the latest version.
 
 ## Are You on the Latest Version?
 
@@ -29,88 +31,44 @@ You can compare the output from the above command with the [latest release relea
 
 ![spin version image](https://img.shields.io/github/v/release/fermyon/spin)
 
-## Upgrade Spin
-
-Spin can be installed in many ways, and therefore the upgrade procedure can differ between users. Here are a few suggested ways to upgrade Spin to the latest version. If you're not sure how or where you installed your current version of Spin try using the `which` command on [Linux and macOS](https://linux.die.net/man/1/which) and the `where` command on [Windows](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/where), as shown below:
-
-{{ tabs "os" }}
-
-{{ startTab "Linux"}}
-
-<!-- @selectiveCpy -->
-
-```bash
-$ which spin
-```
-
-{{ blockEnd }}
-
-{{ startTab "macOS"}}
-
-<!-- @selectiveCpy -->
-
-```bash
-$ which spin
-```
-
-{{ blockEnd }}
-
-{{ startTab "Windows"}}
-
-<!-- @selectiveCpy -->
-
-```bash
-$ where spin
-```
-
-{{ blockEnd }}
-
-{{ blockEnd }}
-
-### Installer 
+## Upgrading Using the Installer
 
 If you originally followed the documentation's [installer script method](./install#installing-spin), please revisit to reinstall.
 
-> Hint: Your Spin executable will likely be in the following location:
+> The installer downloads to the current directory, which is probably not where you're running it from day-to-day. After downloading, move the downloaded Spin binary to the same place as you moved it before, for example `/usr/local/bin/spin`. You can use `which spin` (Linux and MacOS) or `where spin` (Windows) to remind yourself where that was!
 
-<!-- @nocpy -->
+## Upgrading Using Homebrew
 
-```bash
-/usr/local/bin/spin
-```
-
-### Homebrew
-
-If you installed Spin using [Homebrew](https://brew.sh/) please use the following commands to upgrade Spin.
+If you originally installed Spin via [Homebrew](https://brew.sh/), you should use Homebrew to upgrade it:
 
 <!-- @selectiveCpy -->
 
 ```bash
 $ brew update
-$ brew upgrade fermyon/tap/spin
+$ brew upgrade spinframework/tap/spin
 ```
 
-### Cargo
+## Upgrading Using `cargo`
 
-If you originally followed the documentation's [Cargo install method](./install#using-cargo-to-install-spin), please revisit to reinstall.
+If you originally [installed Spin via `cargo install`](./install#using-cargo-to-install-spin), please revisit to reinstall.
 
-> Hint: Your Spin executable will likely be in the following location:
-
-<!-- @nocpy -->
-
-```bash
-~/.cargo/bin/spin
-```
-
-### Source
+## Upgrading by Building From Source
 
 If you followed the documentation's [install from source method](./install#building-spin-from-source) please revisit to reinstall.
 
-> Hint: Your Spin executable will likely be in the following location (where you originally cloned the Spin repository):
+## If You're Not Sure
 
-```bash
-~/spin/target/release/spin
-```
+If you can't remember how you originally installed Spin, run `which spin` (Linux or MacOS) or `where spin` (Windows) to see where your current install is, and look it up on the following chart:
+
+| Current location is...           | Install / upgrade method                   |
+|----------------------------------|--------------------------------------------|
+| `~/.cargo/bin/spin`              | You used `cargo install`. Re-run the instructions for using Cargo. |
+| `C:/Users/.../.cargo/bin/spin`   | You used `cargo install`. Re-run the instructions for using Cargo. |
+| `/opt/homebrew/Cellar/...`       | You used Homebrew. [See above.](#homebrew) |
+| `/usr/local/Cellar/...`          | You used Homebrew. [See above.](#homebrew) |
+| `/home/linuxbrew/.linuxbrew/...` | You used Homebrew. [See above.](#homebrew) |
+| `.../target/release/spin`        | You built from source. Re-run the instructions for building from source. |
+| Anywhere else                    | You used the install script. Re-run it, then move the `spin` file to replace your current one. |
 
 ## Troubleshooting
 
@@ -127,7 +85,7 @@ echo $PATH
 /Users/my_user/.cargo/bin:/usr/local/bin
 ```
 
-> Paths are separated by the `:` (colon)
+> Paths are separated by the `:` (colon) on Linux and MacOS, and `;` (semi-colon) on Windows.
 
 In the above case, the [Cargo install method](./install#using-cargo-to-install-spin)'s installation will take precedence over the [installer script method](./install#installing-spin)'s installation. 
 
