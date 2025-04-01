@@ -66,7 +66,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Funnel+Sans&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Funnel+Sans&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="{{site.info.base_url}}/static/css/styles.css" />
 
     <script>
@@ -113,15 +115,6 @@
             document.documentElement.classList.toggle('dark-theme', mode === "dark");
         }
     </script>
-    <script>
-        // Automatically pick up file changes and show them in the browser without manually refreshing, when the host is localhost/127.0.0.1.
-        var script = document.createElement("script");
-        if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
-            script.src = "https://livejs.com/live.js";
-        }
-        document.head.appendChild(script);
-    </script>
-    
 </head>
 
 <body class="documentation">
