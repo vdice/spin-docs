@@ -113,3 +113,12 @@ watch = ["content/**/*", "templates/*"]
 source = "modules/bartholomew.wasm"
 environment = { PREVIEW_MODE = "0" }
 files = ["content/**/*", "templates/*", "scripts/*", "config/*", "shortcodes/*"]
+
+[[trigger.http]]
+id = "trigger-redirect-kubernetes"
+component = "redirect-kubernetes"
+route = "/kubernetes"
+
+[component.redirect-kubernetes]
+source = "modules/redirect.wasm"
+environment = { DESTINATION = "/deploying", STATUSCODE = "301" }
