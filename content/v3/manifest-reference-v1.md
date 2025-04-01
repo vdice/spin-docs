@@ -35,7 +35,7 @@ The manifest is a TOML file, and follows standard TOML syntax.  See the [TOML do
 | `description`           | Optional   | String      | A human-readable description of the application. | `"The best app for all your world-greeting needs"` |
 | `authors`               | Optional   | Array of strings | The authors of the applications. If present, this must ba an array, even if it has only one entry. | `["Jane Q Hacker (<dev@example.com>)"]` |
 | `trigger`               | Required   | Table       | The trigger for the application - that is, the kind of event that the application responds to. The table must contain the `type` field, and may contain others depending on the value of `type`. See [The `trigger` Table](#the-trigger-table) for details. | `{ type = "http" }` |
-| `variables`             | Optional   | Table       | Dynamic configuration variables which the user can set when they run the application. See [The `variables` Table](#the-variables-table) below. | `[variables]`<br />`message = { default = "hello" }` |
+| `variables`             | Optional   | Table       | Application configuration variables which the user can set when they run the application. See [The `variables` Table](#the-variables-table) below. | `[variables]`<br />`message = { default = "hello" }` |
 | `component`             | Required   | Table array | A manifest must contain at least one `component` table. `component` is always an array, even if there is only one component, so always use double square brackets.  See [The `component` Tables](#the-component-tables) below. | `[[component]]`<br />`id = "hello"` |
 
 ## The `trigger` Table
@@ -110,7 +110,7 @@ Each table in the `component` array contains the following fields:
 | `environment`           | Optional   | Table       | Environment variables to be set for the Wasm module. This is a table. The table keys are user-defined; the values must be strings. | `{ DB_URL = "mysql://spin:spin@localhost/dev" }` |
 | `trigger`               | Required   | Table       | Specifies how this component is triggered. This is a table, whose contents of are trigger-specific; see below. | `[component.trigger]`<br />`route = "/..."` |
 | `build`                 | Optional   | Table       | The command that `spin build` uses to build this component. See [The `component.build` Table](#the-componentbuild-table) below. | `[component.build]`<br />`command = "npm run build"` |
-| `config`                | Optional   | Table       | Dynamic configuration values to be made available to this component. The table keys are user-defined; the values must be strings, and may use template notation as described under [Dynamic Configuration](dynamic-configuration). | `[component.config]`<br />`api_base_url = "https://{{ api_host }}/v1"` |
+| `config`                | Optional   | Table       | Application configuration values to be made available to this component. The table keys are user-defined; the values must be strings, and may use template notation as described under [Application Variables](variables#adding-variables-to-your-applications). | `[component.config]`<br />`api_base_url = "https://{{ api_host }}/v1"` |
 
 ### The `component.trigger` Table for HTTP Applications
 
