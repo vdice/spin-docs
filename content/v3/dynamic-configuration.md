@@ -1,6 +1,7 @@
-title = "Dynamic and Runtime Application Configuration"
+title = "Runtime Configuration"
 template = "main"
 date = "2023-11-04T00:00:01Z"
+enable_shortcodes = true
 [extra]
 url = "https://github.com/spinframework/spin-docs/blob/main/content/v3/dynamic-configuration.md"
 
@@ -23,26 +24,25 @@ url = "https://github.com/spinframework/spin-docs/blob/main/content/v3/dynamic-c
 - [LLM Runtime Configuration](#llm-runtime-configuration)
   - [Remote Compute Provider](#remote-compute-provider)
 
-Configuration for Spin application features such as [application variables](./variables),
+You can change the configuration for Spin application features such as [application variables](./variables),
 [key value storage](./kv-store-api-guide), [SQL storage](./sqlite-api-guide)
-and [Serverless AI](./serverless-ai-api-guide) can be supplied dynamically, i.e. during the application runtime,
+and [Serverless AI](./serverless-ai-api-guide) at the time you run the application,
 requiring no changes to the application code itself.
 
-This runtime configuration data is stored in the `runtime-config.toml` file and passed in via the `--runtime-config-file` flag
-when invoking the `spin up` command.
+This runtime configuration data is stored in the `runtime-config.toml` file and passed to `spin up` via the `--runtime-config-file` flag.
+
+{{ details "Why do I need to specify `--runtime-config-file` rather than Spin detecting it automatically?" "Spin uses safe, local defaults for saving your data. The runtime config file can override those. It should be up to you to opt into that override." }}
 
 Let's look at each configuration category in-depth below.
 
 ## Application Variables Runtime Configuration
 
-[Application Variables](./variables) values may be set at runtime by providers. Currently,
-there are three application variable providers: the [environment-variable provider](#environment-variable-provider), 
-the [Vault provider](#vault-application-variable-provider) and the [Azure Key Vault provider](#azure-key-vault-application-variable-provider).
+When an application needs the value of an [application variable](./variables), it obtains it from a provider. By default, the only provider Spin considers is the [environment variables provider](#environment-variable-provider). That is, application variables are derived from the environment variables of the Spin process.
 
-Multiple application variable providers can be configured in Spin. Providers are
-prioritized top-down in the runtime configuration file, with higher-listed providers
-taking precedence. The environment variable provider always has the highest
-priority.
+You can also tell Spin to use the [Vault provider](#vault-application-variable-provider) and/or the [Azure Key Vault provider](#azure-key-vault-application-variable-provider), by setting these up in the runtime config file.
+
+You can tell Spin to use multiple application variable providers. Spin prioritises them in the order they appear in the runtime config file, with higher-listed providers
+taking precedence. The environment variable provider always has the highest priority.
 
 The provider examples below show how to use or configure each 
 provider. For examples on how to access these variables values within your application, see
@@ -236,7 +236,7 @@ Loaded Secret from Azure Key Vault: secret_value
 
 ## Key Value Store Runtime Configuration
 
-Spin provides built-in key-value storage. By default, this storage is backed by a file in the application `.spin` directory. However, the Spin runtime configuration file (`runtime-config.toml`) can be updated to not only modify the file configuration but also choose to use a different backing store. The available store options are the file provider, an external Redis database, Azure CosmosDB or AWS DynamoDB.
+Spin provides built-in key-value storage. By default, this storage is backed by a file in the application `.spin` directory. However, you can use the Spin runtime configuration file (`runtime-config.toml`) to modify the file location, or to use a different backing store. The available store options are the file provider, an external Redis database, Azure CosmosDB or AWS DynamoDB.
 
 ### File Key Value Store Provider
 
@@ -367,7 +367,7 @@ By default, components will not have access to any of these databases (even the 
 
 ## LLM Runtime Configuration
 
-Spin provides a Large Language Model interface for interacting with LLMs for inferencing and embedding. The default host implementation is to use local CPU/GPU compute. However, the Spin runtime configuration file (`runtime-config.toml`) can be updated to enable Spin to use remote compute using HTTP requests.
+Spin provides a Large Language Model interface for interacting with LLMs for inferencing and embedding. The default host implementation is to use local CPU/GPU compute. However, you can use the Spin runtime configuration file (`runtime-config.toml`) to direct Spin to use remote compute using HTTP requests.
 
 ### Remote Compute Provider
 
@@ -380,6 +380,8 @@ url = "http://example.com"
 auth_token = "<auth_token>"
 ```
 
-Currently, the remote compute option requires an user to deploy their own LLM proxy service. Fermyon Cloud users can do this using the [`cloud-gpu` plugin](https://github.com/fermyon/spin-cloud-gpu).  If you prefer to create and deploy your own proxy service, you can find a reference implementation of the proxy protocol in the [`spin-cloud-gpu plugin repository`](https://github.com/fermyon/spin-cloud-gpu/blob/main/fermyon-cloud-gpu/src/index.ts). 
+Currently, the remote compute option requires an user to deploy their own LLM proxy service. You can find a reference implementation of a proxy service in the [`spin-cloud-gpu plugin repository`](https://github.com/fermyon/spin-cloud-gpu/blob/main/fermyon-cloud-gpu/src/index.ts).
+
+> If you have a Fermyon Cloud account, you can deploy a proxy service there using the [`cloud-gpu` plugin](https://github.com/fermyon/spin-cloud-gpu).   
 
 By default, components will not have access to the LLM models unless granted explicit access through the `component.ai_models` entry in the component manifest within `spin.toml`. See [Serverless AI](./serverless-ai-api-guide) for more details.
