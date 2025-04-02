@@ -1414,15 +1414,11 @@ html.dark-theme body.documentation #topbar.navbar {
 }
 
 html.dark-theme body.documentation #topbar.navbar .logo-wrap .logo {
-  color: #fff;
+  background: url("spin-logo-dark.fd644710.svg") 0 0 / contain no-repeat;
 }
 
 html.dark-theme body.documentation #topbar.navbar .logo-wrap:hover .logo {
   color: #a87ce6;
-}
-
-html.dark-theme body.documentation #topbar.navbar .logo-wrap .logo-developer a {
-  color: #c5fff1 !important;
 }
 
 html.dark-theme body.documentation #topbar.navbar .logo-wrap:after {
@@ -2546,34 +2542,13 @@ html.dark-theme .external {
 }
 
 #topbar.navbar .logo-wrap .logo {
+  text-indent: -9999rem;
+  background: url("spin-logo-light.9b984a2b.svg") 0 0 / contain no-repeat;
+  min-width: 8rem;
+  height: 2.25rem;
   padding: .3rem 1.125rem;
-  margin-top: -4px !important;
-}
-
-#topbar.navbar .logo-wrap .logo svg {
-  margin-left: 1.2vw;
-  height: 30% !important;
-  min-height: auto !important;
-  max-height: auto !important;
-  max-width: auto !important;
-}
-
-#topbar.navbar .logo-wrap .logo-developer {
-  letter-spacing: .0225rem;
-  text-transform: uppercase;
-  letter-spacing: .1125rem;
-  margin: 0;
-  font-family: Space Grotesk, Tofu, Sen, Europa, Avenir, system, -apple-system, SFNSText-Regular, San Francisco, Segoe UI, Helvetica Neue, Lucida Grande, sans-serif;
-  font-size: 70%;
-  font-weight: 500;
-  display: inline-block !important;
-}
-
-#topbar.navbar .logo-wrap .logo-developer a {
-  font-size: 15px !important;
-  font-weight: 500 !important;
-  line-height: 12px !important;
-  display: inline-block !important;
+  position: relative;
+  margin: .6rem 0 .4rem 1.2rem !important;
 }
 
 #topbar.navbar .logo-wrap:after {
