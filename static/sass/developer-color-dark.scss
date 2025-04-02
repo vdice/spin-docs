@@ -34,14 +34,11 @@ html.dark-theme {
 
             .logo-wrap {
                 .logo {
-                    color: white;
+                    background: url(/static/image/spin-logo-dark.svg) no-repeat 0 0;
+                    background-size: contain;
                 } 
                 &:hover .logo {
                     color: $lavenderfloral;
-                }
-
-                .logo-developer a {
-                    color: $greenfoam !important;
                 }
 
                 &::after {
@@ -410,10 +407,7 @@ html.dark-theme {
 						}
 					}
 				}
-
 			}
-
-
 		}
 
 		.logo-wrap {
