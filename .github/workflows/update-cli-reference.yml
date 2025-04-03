@@ -31,7 +31,7 @@ jobs:
           EOF
 
       - name: Generate reference doc
-        run: spin maintenance generate-reference >>cli-reference.md
+        run: spin maintenance generate-reference >>./content/v3/cli-reference.md
 
       - name: Import GPG key
         uses: crazy-max/ghaction-import-gpg@v6
