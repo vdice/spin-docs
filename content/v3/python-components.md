@@ -6,7 +6,6 @@ url = "https://github.com/spinframework/spin-docs/blob/main/content/v3/python-co
 
 ---
 - [Prerequisite](#prerequisite)
-- [Componentize-Py](#componentize-py)
 - [Spin's Python HTTP Request Handler Template](#spins-python-http-request-handler-template)
 - [Creating a New Python Component](#creating-a-new-python-component)
   - [System Housekeeping (Use a Virtual Environment)](#system-housekeeping-use-a-virtual-environment)
@@ -44,18 +43,6 @@ python3 --version
 ```
 
 If you do not have Python 3.10 or later, you can install it by following the instructions [here](https://www.python.org/downloads/).
-
-## Componentize-Py
-
-The Python SDK is built using [`componentize-py`](https://github.com/bytecodealliance/componentize-py). It is a [Bytecode Alliance](https://bytecodealliance.org/) project that allows converting a Python application to a WebAssembly component. It can be installed using the following command:
-
-<!-- @selectiveCpy -->
-
-```bash
-$ pip3 install componentize-py==0.13.3
-```
-
-> **Please note:** The `hello-world` sample below installs `componentize-py` automatically via the `pip3 install -r requirements.txt` command - so feel free to skip this step if you are following the `hello-world` sample with us.
 
 ## Spin's Python HTTP Request Handler Template
 
@@ -140,20 +127,12 @@ The `(venv-dir)` will prefix your terminal prompt now:
 
 ### Requirements
 
-The `requirements.txt`, by default, contains the references to the `spin-sdk` and `componentize-py` packages. These can be installed in your virtual environment using the following command:
+The `requirements.txt`, by default, contains the references to the `spin-sdk` and [`componentize-py`](https://github.com/bytecodealliance/componentize-py) packages. These can be installed in your virtual environment using the following command:
 
 <!-- @selectiveCpy -->
 
 ```bash
 $ pip3 install -r requirements.txt 
-Collecting spin-sdk==3.1.0 (from -r requirements.txt (line 1))
-  Using cached spin_sdk-3.1.0-py3-none-any.whl.metadata (16 kB)
-Collecting componentize-py==0.13.3 (from -r requirements.txt (line 2))
-  Using cached componentize_py-0.13.3-cp37-abi3-macosx_10_12_x86_64.whl.metadata (3.4 kB)
-Using cached spin_sdk-3.1.0-py3-none-any.whl (94 kB)
-Using cached componentize_py-0.13.3-cp37-abi3-macosx_10_12_x86_64.whl (38.8 MB)
-Installing collected packages: spin-sdk, componentize-py
-Successfully installed componentize-py-0.13.3 spin-sdk-3.1.0
 ```
 
 ## Structure of a Python Component
