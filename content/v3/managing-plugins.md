@@ -60,6 +60,18 @@ If the plugin you want has been published on the Web but has not been added to t
 $ spin plugins install --url https://github.com/spinframework/spin-befunge-sdk/releases/download/v1.4.0/befunge2wasm.json
 ```
 
+If the URL requires authorization, pass the HTTP authorization header value via `--auth-header-value`. The value of the flag must be the _full_ header value, including the authorization scheme, not just your token or password. For example:
+
+<!-- @nocpy -->
+
+```bash
+# URL requires bearer authorization
+$ spin plugins install --auth-header-value "Bearer 12345678" --url https://example.com/tell-no-one.json
+
+# URL requires basic authorization
+$ spin plugins install --auth-header-value "Basic c2xhdHM6SWwwdjNmIXNo" --url https://example.com/tell-no-one.json
+```
+
 ### Installing a Plugin From a File
 
 If the plugin you want is in your local file system, you can install it from its manifest file path. The manifest is the JSON document that links to the binaries for different operating systems and processors. For example:
