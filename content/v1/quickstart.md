@@ -34,7 +34,7 @@ Download the `spin` binary along with a starter set of templates and plugins usi
 
 <!-- @selectiveCpy -->
 
-<pre class="bash spin-install" id="spin-install-quick"><code>$ curl -fsSL https://developer.fermyon.com/downloads/install.sh | bash
+<pre class="bash spin-install" id="spin-install-quick"><code>$ curl -fsSL https://spinframework.dev/downloads/install.sh | bash
 </code></pre>
 
 Then move the `spin` binary somewhere in your path, so you can run it from anywhere. For example:
@@ -53,7 +53,7 @@ Download the `spin` binary along with a starter set of templates and plugins usi
 
 <!-- @selectiveCpy -->
 
-<pre class="bash spin-install" id="spin-install-quick"><code>$ curl -fsSL https://developer.fermyon.com/downloads/install.sh | bash
+<pre class="bash spin-install" id="spin-install-quick"><code>$ curl -fsSL https://spinframework.dev/downloads/install.sh | bash
 </code></pre>
 
 Then move the `spin` binary somewhere in your path, so you can run it from anywhere. For example:
@@ -233,8 +233,8 @@ You'll need the TinyGo compiler, as the standard Go compiler does not yet suppor
 ## Create Your First Application
 
 {{suh_cards}}
-{{card_element "sample" "Checklist Sample App" "A checklist app that persists data in a key value store" "https://developer.fermyon.com/hub/preview/sample_checklist" "Typescript,Http,Kv" true }}
-{{card_element "sample" "AI-assisted News Summarizer" "Read an RSS newsfeed and have AI summarize it for you" "https://developer.fermyon.com/hub/preview/sample_newsreader_ai" "Typescript,Javascript,Ai" true }}
+{{card_element "sample" "Checklist Sample App" "A checklist app that persists data in a key value store" "https://spinframework.dev/hub/preview/sample_checklist" "Typescript,Http,Kv" true }}
+{{card_element "sample" "AI-assisted News Summarizer" "Read an RSS newsfeed and have AI summarize it for you" "https://spinframework.dev/hub/preview/sample_newsreader_ai" "Typescript,Javascript,Ai" true }}
 {{blockEnd}}
 
 Now you are ready to create your first Spin application:
