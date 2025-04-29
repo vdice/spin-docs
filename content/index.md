@@ -19,5 +19,5 @@ Spin is **open source**, under the aegis of the [CNCF](https://www.cncf.io/), an
 
 Or dive into the documentation and get started:
 
-- [Quick Start: ](quickstart)
+- [Quick Start](quickstart)
 - [Learn how to write Spin applications](writing-apps)
