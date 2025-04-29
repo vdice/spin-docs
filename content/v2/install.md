@@ -53,7 +53,7 @@ Another option (other than brew) is to use our installer script. The installer s
 <!-- @selectiveCpy -->
 
 ```bash
-$ curl -fsSL https://developer.fermyon.com/downloads/install.sh | bash
+$ curl -fsSL https://spinframework.dev/downloads/install.sh | bash
 ```
 
 Once you have run the installer script, it is highly recommended to add Spin to a folder, which is on your path, e.g.:
@@ -71,7 +71,7 @@ To install a specific version (`v1.2.3` is just an example), you can pass argume
 <!-- @selectiveCpy -->
 
 ```bash
-$ curl -fsSL https://developer.fermyon.com/downloads/install.sh | bash -s -- -v v1.2.3
+$ curl -fsSL https://spinframework.dev/downloads/install.sh | bash -s -- -v v1.2.3
 ```
 
 To install the canary version of spin, you should pass the argument `-v canary`. The canary version is always the latest commit to the main branch of Spin:
@@ -79,7 +79,7 @@ To install the canary version of spin, you should pass the argument `-v canary`.
 <!-- @selectiveCpy -->
 
 ```bash
-$ curl -fsSL https://developer.fermyon.com/downloads/install.sh | bash -s -- -v canary
+$ curl -fsSL https://spinframework.dev/downloads/install.sh | bash -s -- -v canary
 ```
 
 {{ blockEnd }}
@@ -117,7 +117,7 @@ The installer script also installs Spin along with a starter set of language tem
 <!-- @selectiveCpy -->
 
 ```bash
-$ curl -fsSL https://developer.fermyon.com/downloads/install.sh | bash
+$ curl -fsSL https://spinframework.dev/downloads/install.sh | bash
 ```
 
 Once you have run the installer script, it is highly recommended to add Spin to a folder, which is on your path, e.g.:
@@ -135,7 +135,7 @@ To install a specific version (`v1.2.3` is just an example), you can pass argume
 <!-- @selectiveCpy -->
 
 ```bash
-$ curl -fsSL https://developer.fermyon.com/downloads/install.sh | bash -s -- -v v1.2.3
+$ curl -fsSL https://spinframework.dev/downloads/install.sh | bash -s -- -v v1.2.3
 ```
 
 To install the canary version of spin, you should pass the argument `-v canary`. The canary version is always the latest commit to the main branch of Spin:
@@ -143,7 +143,7 @@ To install the canary version of spin, you should pass the argument `-v canary`.
 <!-- @selectiveCpy -->
 
 ```bash
-$ curl -fsSL https://developer.fermyon.com/downloads/install.sh | bash -s -- -v canary
+$ curl -fsSL https://spinframework.dev/downloads/install.sh | bash -s -- -v canary
 ```
 
 {{ blockEnd }}
@@ -321,7 +321,7 @@ For more information, please visit the [managing plugins](./managing-plugins) se
 ## Next Steps
 
 {{suh_cards}}
-{{card_element "sample" "Checklist Sample App" "A checklist app that persists data in a key value store" "https://developer.fermyon.com/hub/preview/sample_checklist" "Typescript,Http,Kv" true }}
-{{card_element "template" "Zola SSG Template" "A template for using Zola framework to create a static webpage" "https://developer.fermyon.com/hub/preview/template_zola_ssg" "rust" true }}
-{{card_element "sample" "AI-assisted News Summarizer" "Read an RSS newsfeed and have AI summarize it for you" "https://developer.fermyon.com/hub/preview/sample_newsreader_ai" "Typescript,Javascript,Ai" true }}
+{{card_element "sample" "Checklist Sample App" "A checklist app that persists data in a key value store" "https://spinframework.dev/hub/preview/sample_checklist" "Typescript,Http,Kv" true }}
+{{card_element "template" "Zola SSG Template" "A template for using Zola framework to create a static webpage" "https://spinframework.dev/hub/preview/template_zola_ssg" "rust" true }}
+{{card_element "sample" "AI-assisted News Summarizer" "Read an RSS newsfeed and have AI summarize it for you" "https://spinframework.dev/hub/preview/sample_newsreader_ai" "Typescript,Javascript,Ai" true }}
 {{blockEnd}}

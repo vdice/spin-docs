@@ -84,7 +84,7 @@ const store = createStore({
       let text = ""
       if (res.status != 200) {
         text = `<h3>Content not found</h3>
-        <p>Unable to load the requested resource. Please try again in case it is a transitent error or open an <a href=\"https://github.com/fermyon/developer/issues\">issue</a></p>
+        <p>Unable to load the requested resource. Please try again in case it is a transient error or open an <a href=\"https://github.com/spinframework/spin-docs/issues\">issue</a></p>
         <p>Browse the available content by closing the modal.</p>`
       } else {
         text = (await res.text())

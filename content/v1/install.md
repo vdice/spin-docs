@@ -144,7 +144,7 @@ To install the canary version of spin, you should pass the argument `-v canary`.
 <!-- @selectiveCpy -->
 
 ```bash
-$ curl -fsSL https://developer.fermyon.com/downloads/install.sh | bash -s -- -v canary
+$ curl -fsSL https://spinframework.dev/downloads/install.sh | bash -s -- -v canary
 ```
 
 {{ blockEnd }}
