@@ -171,9 +171,9 @@ addEventListener('fetch', async (event: FetchEvent) => {
 
 {{ startTab "Python"}}
 
-> [**Want to go straight to the reference documentation?**  Find it here.](https://spinframework.github.io/spin-python-sdk/variables.html)
+> [**Want to go straight to the reference documentation?**  Find it here.](https://spinframework.github.io/spin-python-sdk/v3/variables.html)
 
-The `variables` module has a function called `get`(https://spinframework.github.io/spin-python-sdk/variables.html#spin_sdk.variables.get).
+The `variables` module has a function called `get`(https://spinframework.github.io/spin-python-sdk/v3/variables.html#spin_sdk.variables.get).
 
 ```py
 from spin_sdk.http import IncomingHandler, Request, Response, send
