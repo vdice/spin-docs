@@ -61,7 +61,7 @@ This page contains information about language support for Spin features:
 
 {{ startTab "Python"}}
 
-**[📄 Visit the Python Spin SDK reference documentation](https://spinframework.github.io/spin-python-sdk/v1) to see specific modules, functions, variables and syntax relating to the following Python SDK.**
+**[📄 Visit the Python Spin SDK reference documentation](https://spinframework.github.io/spin-python-sdk/v3) to see specific modules, functions, variables and syntax relating to the following Python SDK.**
 
 | Feature | SDK Supported? |
 |-----|-----|
