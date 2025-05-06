@@ -116,21 +116,21 @@ The `infer_with_options` examples, operation:
 
 {{ startTab "Typescript"}}
 
-> [**Want to go straight to the reference documentation?**  Find it here.](https://spinframework.github.io/spin-js-sdk/stable/modules/Llm.html)
+> [**Want to go straight to the reference documentation?**  Find it here.](https://spinframework.github.io/spin-js-sdk/)
 
-To use Serverless AI functions, [the `Llm` module](https://spinframework.github.io/spin-js-sdk/stable/modules/Llm.html) from the Spin SDK provides two methods: `infer` and `generateEmbeddings`. For example: 
+To use Serverless AI functions, [the `@spinframework/spin-llm` pacakge](https://spinframework.github.io/spin-js-sdk/modules/_spinframework_spin-llm.html) provides two methods: `infer` and `generateEmbeddings`. For example: 
 
 ```javascript
 import { AutoRouter } from 'itty-router';
-import { Llm } from '@fermyon/spin-sdk';
+import { inferencingModels, EmbeddingModels, infer, generateEmbeddings } from '@spinframework/spin-llm';
 
 let router = AutoRouter();
 
 router
     .get("/", () => {
-       let embeddings = Llm.generateEmbeddings(Llm.EmbeddingModels.AllMiniLmL6V2, ["someString"])
+       let embeddings = generateEmbeddings(EmbeddingModels.AllMiniLmL6V2, ["someString"])
         console.log(embeddings.embeddings)
-        let result = Llm.infer(Llm.InferencingModels.Llama2Chat, prompt)
+        let result = infer(InferencingModels.Llama2Chat, prompt)
 
         return new Response(result.text);
     })
@@ -146,15 +146,15 @@ addEventListener('fetch', async (event: FetchEvent) => {
 `infer` operation:
 
 - It takes in the following arguments - model name, prompt and a optional third parameter for inferencing options. 
-- The model name is a string. There are enums for the inbuilt models (llama2-chat and codellama) in [`InferencingModels`](https://spinframework.github.io/spin-js-sdk/stable/enums/Llm.InferencingModels.html).
-- The optional third parameter which is an [InferencingOptions](https://spinframework.github.io/spin-js-sdk/stable/interfaces/Llm.InferencingOptions.html) interface allows you to specify parameters such as `maxTokens`, `repeatPenalty`, `repeatPenaltyLastNTokenCount`, `temperature`, `topK`, `topP`.  
-- The return value is an [`InferenceResult`](https://spinframework.github.io/spin-js-sdk/stable/interfaces/Llm.EmbeddingResult.html).
+- The model name is a string. There are enums for the inbuilt models (llama2-chat and codellama) in [`InferencingModels`](https://spinframework.github.io/spin-js-sdk/enums/_spinframework_spin-llm.InferencingModels.html).
+- The optional third parameter which is an [InferencingOptions](https://spinframework.github.io/spin-js-sdk/interfaces/_spinframework_spin-llm.InferencingOptions.html) interface allows you to specify parameters such as `maxTokens`, `repeatPenalty`, `repeatPenaltyLastNTokenCount`, `temperature`, `topK`, `topP`.  
+- The return value is an [`InferenceResult`](https://spinframework.github.io/spin-js-sdk/interfaces/_spinframework_spin-llm.InferenceResult.html).
 
 `generateEmbeddings` operation:
 
 - It takes two arguments - model name and list of strings to generate the embeddings for. 
-- The model name is a string. There are enums for the inbuilt models (AllMiniLmL6V2) in [`EmbeddingModels`](https://spinframework.github.io/spin-js-sdk/stable/enums/Llm.EmbeddingModels.html).
-- The return value is an [`EmbeddingResult`](https://spinframework.github.io/spin-js-sdk/stable/interfaces/Llm.EmbeddingResult.html)
+- The model name is a string. There are enums for the inbuilt models (AllMiniLmL6V2) in [`EmbeddingModels`](https://spinframework.github.io/spin-js-sdk/enums/_spinframework_spin-llm.EmbeddingModels.html).
+- The return value is an [`EmbeddingResult`](https://spinframework.github.io/spin-js-sdk/interfaces/_spinframework_spin-llm.EmbeddingResult.html)
 
 {{ blockEnd }}
 

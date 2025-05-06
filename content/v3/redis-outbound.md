@@ -89,14 +89,14 @@ You can find a complete Rust code example for using outbound Redis from an HTTP 
 
 {{ startTab "TypeScript"}}
 
-> [**Want to go straight to the reference documentation?**  Find it here.](https://spinframework.github.io/spin-js-sdk/stable/)
+> [**Want to go straight to the reference documentation?**  Find it here.](https://spinframework.github.io/spin-js-sdk/)
 
-Redis functions are available on [the `Redis` module](https://spinframework.github.io/spin-js-sdk/stable/modules/Redis.html). The function names match the operations above. For example:
+Redis functions are available on [the `Redis` module](https://spinframework.github.io/spin-js-sdk/modules/_spinframework_spin-redis.html). The function names match the operations above. For example:
 
 ```javascript
-import { Redis } from "@fermyon/spin-sdk"
+import { open } from "@spinframework/spin-redis"
 
-let db = Redis.open("redis://localhost:6379")
+let db = open("redis://localhost:6379")
 let value = db.get(key);
 ```
 

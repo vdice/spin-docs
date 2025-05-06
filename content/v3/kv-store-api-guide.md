@@ -83,19 +83,19 @@ fn handle_request(_req: Request) -> Result<impl IntoResponse> {
 
 {{ startTab "Typescript"}}
 
-> [**Want to go straight to the reference documentation?**  Find it here.](https://spinframework.github.io/spin-js-sdk/stable/)
+> [**Want to go straight to the reference documentation?**  Find it here.](https://spinframework.github.io/spin-js-sdk/)
 
-The key value functions can be accessed after opening a store using either [the `Kv.open` or the `Kv.openDefault` methods](https://spinframework.github.io/spin-js-sdk/stable/modules/Kv.html) which returns a [handle to the store](https://spinframework.github.io/spin-js-sdk/stable/interfaces/Kv.Store.html). For example:
+The key value functions can be accessed after opening a store using either [the `open` or the `openDefault` functions](https://spinframework.github.io/spin-js-sdk/modules/_spinframework_spin-kv.html) which returns a [handle to the store](https://spinframework.github.io/spin-js-sdk/interfaces/_spinframework_spin-kv.Store.html). For example:
 
 ```ts
 import { AutoRouter } from 'itty-router';
-import { Kv } from '@fermyon/spin-sdk';
+import { openDefault } from '@spinframework/spin-kv';
 
 let router = AutoRouter();
 
 router
     .get("/", () => {
-        let store = Kv.openDefault()
+        let store = openDefault()
         store.set("mykey", "myvalue") 
         return new Response(store.get("mykey") ?? "Key not found");
     })
@@ -109,14 +109,14 @@ addEventListener('fetch', async (event: FetchEvent) => {
 **General Notes**
 - The SDK doesn't surface the `close` operation. It automatically closes all stores at the end of the request; there's no way to close them early.
 
-[`get` **Operation**](https://spinframework.github.io/spin-js-sdk/stable/interfaces/Kv.Store.html#get)
+[`get` **Operation**](https://spinframework.github.io/spin-js-sdk/interfaces/_spinframework_spin-kv.Store.html#get)
 - The result is of the type `Uint8Array | null`
 - If the key does not exist, `get` returns `null`
 
-[`set` **Operation**](https://spinframework.github.io/spin-js-sdk/stable/interfaces/Kv.Store.html#set)
+[`set` **Operation**](https://spinframework.github.io/spin-js-sdk/interfaces/_spinframework_spin-kv.Store.html#set)
 - The value argument is of the type `Uint8Array | string | object`.
 
-[`setJson`](https://spinframework.github.io/spin-js-sdk/stable/interfaces/Kv.Store.html#setJson) and [`getJson` **Operation**](https://spinframework.github.io/spin-js-sdk/stable/interfaces/Kv.Store.html#getJson)
+[`setJson`](https://spinframework.github.io/spin-js-sdk/interfaces/_spinframework_spin-kv.Store.html#setjson) and [`getJson` **Operation**](https://spinframework.github.io/spin-js-sdk/interfaces/_spinframework_spin-kv.Store.html#getjson)
 - Applications can store JavaScript objects using `setJson`; these are serialized within the store as JSON. These serialized objects can be retrieved and deserialized using `getJson`. If you call `getJson` on a key that doesn't exist then it returns an empty object.
 
 {{ blockEnd }}

@@ -119,13 +119,13 @@ struct ToDo {
 
 {{ startTab "Typescript"}}
 
-> [**Want to go straight to the reference documentation?**  Find it here.](https://spinframework.github.io/spin-js-sdk/stable/modules/Sqlite.html)
+> [**Want to go straight to the reference documentation?**  Find it here.](https://spinframework.github.io/spin-js-sdk/)
 
-To use SQLite functions, use [the `Sqlite.open` or `Sqlite.openDefault` function](https://spinframework.github.io/spin-js-sdk/stable/modules/Sqlite.html) to obtain [a `SqliteConnection` object](https://spinframework.github.io/spin-js-sdk/stable/interfaces/Sqlite.SqliteConnection.html). `SqliteConnection` provides the `execute` method as described above. For example:
+To use SQLite functions, use [the `Sqlite.open` or `Sqlite.openDefault` function](https://spinframework.github.io/spin-js-sdk/modules/_spinframework_spin-sqlite.html) to obtain [a `SqliteConnection` object](https://spinframework.github.io/spin-js-sdk/interfaces/_spinframework_spin-sqlite.SqliteConnection.html). `SqliteConnection` provides the `execute` method as described above. For example:
 
 ```javascript
 import { AutoRouter } from 'itty-router';
-import { Sqlite } from '@fermyon/spin-sdk';
+import { Sqlite } from '@spinframework/spin-sqlite';
 
 let router = AutoRouter();
 router
