@@ -50,6 +50,8 @@ jobs:
       #     npm run lint-markdown
 
       - name: Run npm tests
+        # Only run tests on PR events; bypass for deploys/merges to main
+        if: ${{ github.event_name == 'pull_request' }}
         run: |
           npm test
 
