@@ -86,7 +86,7 @@ function parseMdFile(file, filepath) {
     return searchIndex
 }
 
-function main() {
+async function main() {
     const argparse = args(process.argv)
     if (!argparse.dir || !argparse.out) {
         console.error("--dir and --out must be specified")
@@ -95,16 +95,11 @@ function main() {
 
     let consolidatedSearchIndex = []
 
-    glob(argparse.dir + '/**/*.md', {ignore: argparse.ignore},  (err, files) => {
-        if (err) {
-            console.log('Error', err)
-        } else {
-            files.forEach(file => {
-                consolidatedSearchIndex = consolidatedSearchIndex.concat(parseMdFile(file, argparse.dir))
-            })
-        }
-        fs.writeFileSync(argparse.out, JSON.stringify(consolidatedSearchIndex));
+    let files = await glob(argparse.dir + '/**/*.md', {ignore: argparse.ignore})
+    files.forEach(file => {
+        consolidatedSearchIndex = consolidatedSearchIndex.concat(parseMdFile(file, argparse.dir))
     })
+    fs.writeFileSync(argparse.out, JSON.stringify(consolidatedSearchIndex));
 }
 
 main()
