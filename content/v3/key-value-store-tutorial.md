@@ -75,6 +75,8 @@ $ spin new -t http-rust spin-key-value
 
 ```bash
 $ spin new -t http-ts spin-key-value
+$ cd spin-key-value
+$ npm install @spinframework/spin-kv
 
 # Reference: https://github.com/spinframework/spin-js-sdk/tree/main/examples/spin-host-apis/spin-kv
 ```
@@ -234,7 +236,7 @@ fn handle_request(req: Request) -> anyhow::Result<impl IntoResponse> {
 
 ```typescript
 import { AutoRouter } from 'itty-router';
-import { Kv } from '@fermyon/spin-sdk';
+import { openDefault } from '@spinframework/spin-kv';
 
 const decoder = new TextDecoder();
 
@@ -242,7 +244,7 @@ let router = AutoRouter();
 
 router
     .all("*", async (req: Request) => {
-        let store = Kv.openDefault();
+        let store = openDefault();
         let status = 200;
         let body;
 

@@ -256,7 +256,7 @@ For a full Rust SDK reference, see the [Rust Spin SDK documentation](https://doc
 
 {{ startTab "TypeScript"}}
 
-> [**Want to go straight to the reference documentation?**  Find it here.](https://spinframework.github.io/spin-js-sdk/stable/)
+> [**Want to go straight to the reference documentation?**  Find it here.](https://spinframework.github.io/spin-js-sdk/)
 
 Building a Spin HTTP component with the JavaScript/TypeScript SDK now involves adding an event listener for the `fetch` event. This event listener handles incoming HTTP requests and allows you to construct and return HTTP responses.
 

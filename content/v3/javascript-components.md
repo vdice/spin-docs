@@ -31,7 +31,7 @@ With JavaScript being a very popular language, Spin provides an SDK to support b
 
 > All examples from this page can be found in [the JavaScript SDK repository on GitHub](https://github.com/spinframework/spin-js-sdk/tree/main/examples).
 
-[**Want to go straight to the Spin SDK reference documentation?**  Find it here.](https://spinframework.github.io/spin-js-sdk/stable/)
+[**Want to go straight to the Spin SDK reference documentation?**  Find it here.](https://spinframework.github.io/spin-js-sdk/)
 
 ## Installing Templates
 
@@ -77,19 +77,18 @@ This creates a directory of the following structure:
 
 ```text
 hello-world
-├── config
-│   └── knitwit.json
 ├── package.json
+├── README.md
 ├── spin.toml
 ├── src
-│   └── index.ts
+│   └── index.ts
 ├── tsconfig.json
 └── webpack.config.js
 ```
 
 The source for the component is present in `src/index.ts`. [Webpack](https://webpack.js.org) is used to bundle the component into a single `.js` file which will then be compiled to a `.wasm` module.
 
-{{ details "Going from JavaScript to Wasm" "The JS source is compiled to a `wasm` module using the `j2w` node executable provided by the `@fermyon/spin-sdk` which is a wrapper around `ComponentizeJS`. The `knitwit.json` is the configuration file used by [knitwit](https://github.com/fermyon/knitwit) to manage the WebAssembly dependencies of each package."}}
+{{ details "Going from JavaScript to Wasm" "The JS source is compiled to a `wasm` module using the `j2w` node executable provided by the `@fermyon/spin-sdk` which is a wrapper around `ComponentizeJS` that is used to manage the dependencies."}}
 
 ## Building and Running the Template
 
@@ -259,13 +258,13 @@ You must [add `http://self` or `http://self.alt` to the component's `allowed_out
 > You can find a complete example for using outbound Redis from an HTTP component
 > in the [spin-js-sdk repository on GitHub](https://github.com/spinframework/spin-js-sdk/blob/main/examples/spin-host-apis/spin-redis).
 
-Using the Spin's JS SDK, you can use the Redis key/value store and to publish messages to Redis channels.
+We can install and use the `@spinframework/spin-redis` package to use the Redis key/value store and to publish messages to Redis channels.
 
 Let's see how we can use the JS/TS SDK to connect to Redis:
 
 ```javascript
 import { AutoRouter } from 'itty-router';
-import { Redis } from '@fermyon/spin-sdk';
+import { Redis } from '@spinframework/spin-redis';
 
 const encoder = new TextEncoder();
 const redisAddress = 'redis://localhost:6379/';
@@ -314,13 +313,19 @@ Spin has a key-value store built in. For information about using it from TypeScr
 
 ## Storing Data in SQLite
 
+We can use the `@spinframework/spin-sqlite` package to interact with Spin's SQLite interface. 
+
 For more information about using SQLite from TypeScript/Javascript, see [SQLite storage](sqlite-api-guide).
 
 ## Storing Data in MySQL and PostgreSQL Relational Databases
 
+We can use the `@spinframework/spin-mysql`, `@spinframework/spin-postgres` package to interact with Spin's RDBMS interfaces.
+
 For more information about using relational databases from TypeScript/JavaScript, see [Relational Databases](rdbms-storage).
 
 ## AI Inferencing From JS/TS Components
+
+We can use the `@spinframework/spin-llm` package to interact with Spin's LLM interface.
 
 For more information about using Serverless AI from JS/TS, see the [Serverless AI](serverless-ai-api-guide) API guide.
 
@@ -331,21 +336,24 @@ The SDK does not support the full specification of `Node.js`. A limited set of A
 <!-- @selectiveCpy -->
 
 ```bash
-$ npm install @fermyon/wasi-ext
+$ npm install @spinframework/wasi-ext
 ```
 
 Once installed, the plugin provided by it can be added to the webpack config: 
 
 ```js
-const WasiExtPlugin = require("wasi-ext/plugin")
+import WasiExtPlugin from "@spinframework/wasi-ext/plugin/index.js";
 
-module.exports = {
+export default config = () => {
     ...
-    plugins: [
-        new WasiExtPlugin()
-    ],
-    ...
-};
+    return {
+        ...
+        plugins: [
+            new WasiExtPlugin()
+        ],
+        ...
+    }
+}
 ```
 
 This library only currently supports the following polyfills:

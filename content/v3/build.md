@@ -78,7 +78,7 @@ It's normally convenient to put the detailed build instructions in `package.json
 ```json
 {
   "scripts": {
-    "build": "knitwit --out-dir build/wit/knitwit --out-world combined && npx webpack --mode=production && npx mkdirp target && npx j2w -i dist.js -d combined-wit -n combined -o target/spin-http-js.wasm"
+    "build": "npx webpack && mkdirp dist && j2w -i build/bundle.js -o target/spin-http-js.wasm"
   }
 }
 ```

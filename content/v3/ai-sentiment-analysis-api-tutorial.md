@@ -451,7 +451,8 @@ impl FromStr for Sentiment {
 {{ startTab "TypeScript"}}
 
 ```typescript
-import { Llm, Kv } from "@fermyon/spin-sdk";
+import * as Llm from "@spinframework/spin-llm";
+import * as Kv from "@spinframework/spin-kv";
 import { AutoRouter } from 'itty-router';
 
 interface SentimentAnalysisRequest {
