@@ -272,10 +272,10 @@ class ModalSuggest {
     this.projectData = [
       {
         project: "Spin",
-        link1: ["Install", "/spin/install"],
-        link2: ["Quickstart", "/spin/quickstart/"],
-        link3: ["Develop", "/spin/developing"],
-        link4: ["Deploy", "/spin/deploying-to-fermyon/"],
+        link1: ["Install", "/install"],
+        link2: ["Quickstart", "/quickstart"],
+        link3: ["Develop", "/writing-apps"],
+        link4: ["Deploy", "/deploying"],
       }
     ];
     this.projectRecommendations = list(
@@ -285,7 +285,6 @@ class ModalSuggest {
     this.projectRecommendations.update(this.projectData);
     this.el = el(
       "div.result-section-container",
-      "Suggested Projects",
       this.projectRecommendations,
     );
   }
@@ -297,7 +296,7 @@ class SearchModal {
     this.modalSearchBar = el("input.modal-search-bar", {
       type: "text",
       spellcheck: false,
-      placeholder: "Search Fermyon Developer Home",
+      placeholder: "Search Spin Docs",
       oninput: function (e) {
         this.updateSearch();
       }.bind(this),
