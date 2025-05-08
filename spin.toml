@@ -62,6 +62,8 @@ watch = ["content/**/*", "templates/*"]
 [component.fileserver-static]
 source = "modules/spin_static_fs.wasm"
 files = [{ source = "static/", destination = "/" }]
+[component.fileserver-static.build]
+command = ["npm run bundle-scripts-ci"]
 
 [component.fileserver-downloads]
 source = "modules/spin_static_fs.wasm"
